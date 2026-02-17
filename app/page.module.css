@@ -1,0 +1,319 @@
+/* Hero Section - Handled by Hero component */
+
+/* Utility Backgrounds */
+.creamBg {
+  background-color: #FFF9E7;
+  /* Closer to the image color */
+}
+
+.peachBg {
+  background-color: #FFE3CB;
+}
+
+/* About Us Section */
+.about {
+  padding: 6rem 0;
+  /* Background applied via utility class */
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.aboutImageWrapper {
+  position: relative;
+  border-radius: 40px;
+  /* Larger border radius as seen in the image */
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.aboutContent {
+  padding-left: 0;
+}
+
+.aboutTitle {
+  color: #6B21A8;
+  font-size: 2.5rem;
+  text-align: center;
+  /* Centering the heading */
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+  font-family: var(--font-space-grotesk), sans-serif;
+  width: 100%;
+}
+
+.mainHeading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #6B21A8;
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.orangeTextHeading {
+  color: #EA580C;
+}
+
+.italicDesc {
+  color: #1a1a1a;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+.numberedList {
+  margin-bottom: 2rem;
+}
+
+.listItem {
+  /* display: flex; */
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  /* align-items: flex-start; */
+  font-family: var(--font-noto-sans), sans-serif;
+  color: #4b5563;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.listNumber {
+  color: #4b5563;
+  font-size: 1.125rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.listItem strong {
+  color: #4b5563;
+  font-weight: 700;
+}
+
+.knowMoreLink {
+  color: #6B21A8;
+  font-weight: 800;
+  font-size: 1.125rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.2s;
+  margin-top: 2.5rem;
+  /* Moved further down */
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+.knowMoreLink:hover {
+  gap: 0.75rem;
+}
+
+.chevron {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Services Section */
+.services {
+  padding: 5rem 0;
+  /* Background applied via utility class */
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.sectionHeader h2 {
+  color: #6B21A8;
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader p {
+  color: #4b5563;
+  font-family: var(--font-noto-sans), sans-serif;
+  font-size: 1.125rem;
+}
+
+/* Courses Section */
+.courses {
+  padding: 5rem 0;
+  /* Background applied via utility class */
+}
+
+.coursesFooter {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Why Choose Us Section */
+.whyChooseUs {
+  padding: 5rem 0;
+  /* Background applied via utility class */
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.whyItem {
+  text-align: center;
+}
+
+.whyIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.whyItem h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.whyItem p {
+  color: #666;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+/* CTA Section */
+.cta {
+  background: linear-gradient(13.96deg, #FF6600 43.63%, #FFD700 113.08%);
+  padding: 80px 0;
+  opacity: 0.95;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.ctaHeading {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -0.9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ctaHeading span {
+  display: block;
+  filter: drop-shadow(0px 0px 15px rgba(253, 224, 71, 0.5));
+}
+
+.ctaParagraph {
+  font-family: var(--font-noto-sans), sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #334155;
+  text-align: center;
+  margin: 0;
+}
+
+.ctaButtons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.ctaButton {
+  background: #6B21A8;
+  border: 1px solid #C59D5F;
+  border-radius: 8px;
+  padding: 0 32px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: var(--font-noto-sans), sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-width: 213px;
+  backdrop-filter: blur(2px);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 33, 168, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .about,
+  .services,
+  .courses,
+  .whyChooseUs,
+  .cta {
+    padding: 3rem 0;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .aboutContent {
+    padding-left: 0;
+  }
+
+  .whyGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ctaHeading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}

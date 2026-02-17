@@ -1,0 +1,32 @@
+{
+  "gallery": [
+    {
+      "id": "training-session-1",
+      "title": "SolidWorks Training Session",
+      "description": "Students learning advanced CAD techniques in our modern training facility",
+      "category": "training",
+      "alt": "Students working on SolidWorks projects in computer lab"
+    },
+    {
+      "id": "placement-success-1",
+      "title": "Placement Success Story",
+      "description": "Our students securing positions at leading engineering companies",
+      "category": "placement",
+      "alt": "Graduate celebrating job placement success"
+    },
+    {
+      "id": "design-project-1",
+      "title": "Industrial Design Project",
+      "description": "Complex mechanical assembly designed and delivered for automotive client",
+      "category": "design",
+      "alt": "3D CAD model of industrial mechanical assembly"
+    },
+    {
+      "id": "workshop-1",
+      "title": "Industry Workshop",
+      "description": "Expert-led workshop on advanced product design methodologies",
+      "category": "events",
+      "alt": "Industry expert conducting design workshop"
+    }
+  ]
+}

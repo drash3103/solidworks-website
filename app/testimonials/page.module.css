@@ -1,0 +1,218 @@
+.pageContainer {
+    width: 100%;
+    font-family: var(--font-noto-sans), sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 420px;
+    background-image: url('/testimonials_hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(179.52deg, rgba(234, 88, 12, 0.85) 35.86%, rgba(107, 33, 168, 0.85) 99.59%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.heroTitle {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.ratingBadge {
+    background-color: #6B21A8;
+    /* Purple */
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ratingScore {
+    background-color: #FACC15;
+    /* Yellow */
+    color: #6B21A8;
+    font-weight: 800;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.ratingText {
+    text-align: left;
+}
+
+.studentLabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+/* Reviews Grid */
+.reviewsSection {
+    padding: 5rem 0;
+    background-color: #FFF8E7;
+    /* Updated to Old Lace for consistency */
+}
+
+.masonryGrid {
+    column-count: 3;
+    column-gap: 1.5rem;
+}
+
+.reviewCard {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: white;
+    /* Changed to white to pop against #FFF8E7, or keep colored? Keeping colored as per user original design but cleaning up if needed. User had colored cards. */
+    /* Use original logic: if precise colors are mapped, keep them. */
+    /* Actually, the cards had specific classes. I should keep those classes but maybe ensure they look good on #FFF8E7. 
+       Most are light pastel. #FFF8E7 is very light beige. 
+       Let's keep the card colors as they are distinctive. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviewCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Variants */
+.yellow {
+    background-color: #FDE68A;
+}
+
+/* Stronger yellow/orange tint */
+.peach {
+    background-color: #FFEDD5;
+}
+
+/* Peach/Orange tint */
+.lightyellow {
+    background-color: #FEF3C7;
+}
+
+/* Lighter yellow */
+.purple {
+    background-color: #E9D5FF;
+}
+
+/* Light purple */
+.brown {
+    background-color: #D6D3D1;
+}
+
+/* Warm Gray/Brownish */
+
+
+.cardStars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 1rem;
+}
+
+.reviewText {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #1F2937;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.reviewerName {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #111827;
+}
+
+.loadMoreWrapper {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.loadMoreBtn {
+    background-color: #6B21A8;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: var(--font-noto-sans), sans-serif;
+}
+
+.loadMoreBtn:hover {
+    background-color: #581c87;
+}
+
+/* Responsive */
+.heroAuthLogo {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: auto;
+    z-index: 20;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 5px;
+}
+
+@media (max-width: 900px) {
+    .masonryGrid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .masonryGrid {
+        column-count: 1;
+    }
+
+    .heroTitle {
+        font-size: 2.25rem;
+    }
+}

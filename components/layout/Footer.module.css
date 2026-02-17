@@ -1,0 +1,172 @@
+.footer {
+  background: linear-gradient(178.7deg, #3A0268 -15.3%, #7304CE 137.81%);
+  border-top: 1px solid #6B21A8;
+  color: #fff;
+  padding: 4rem 0 1rem;
+  margin-top: 0;
+  /* Remove top margin if design suggests full fluid flow or adjust as needed */
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Brand Section */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: white;
+  /* Ensure logo is visible on purple bg */
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.brandName {
+  color: #FF8A00;
+  /* Orange color from logo match */
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  color: #E2E8F0;
+  font-size: 0.875rem;
+}
+
+/* Columns */
+.column h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column ul li {
+  margin-bottom: 0.75rem;
+}
+
+.column ul a {
+  color: #E2E8F0;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: color 0.2s ease;
+}
+
+.column ul a:hover {
+  color: #FF8A00;
+}
+
+/* Contact List */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #E2E8F0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.contactItem a {
+  color: #E2E8F0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactItem a:hover {
+  color: #FF8A00;
+}
+
+.icon {
+  color: #FF8A00;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Bottom Bar */
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright,
+.credits {
+  font-size: 0.875rem;
+  color: #E2E8F0;
+  opacity: 0.8;
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.social a {
+  color: white;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social a:hover {
+  transform: translateY(-2px);
+  color: #FF8A00;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;
+    text-align: center;
+  }
+}

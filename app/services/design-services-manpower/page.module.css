@@ -1,0 +1,357 @@
+.pageWrapper {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 420px;
+  background-image: url('/services_hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(179.79deg, rgba(255, 102, 0, 0.85) 33.22%, rgba(107, 33, 168, 0.85) 99.82%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Intro Section */
+.introSection {
+  padding: 5rem 0;
+  background: #FFF7ED;
+}
+
+.introContent {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.introText p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.highlight {
+  color: #6B21A8;
+  font-weight: 700;
+}
+
+.introImage img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Common Section Title */
+.sectionTitle {
+  text-align: center;
+  color: #6B21A8;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.withBar::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #6B21A8 0%, #EA580C 100%);
+  border-radius: 999px;
+}
+
+/* Design Services Section */
+.designServices {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.designGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.designCard {
+  background: white;
+  border: 2px solid #EA580C;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.designCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.designImage {
+  height: 150px;
+  background: #f3f4f6;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.designImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.designTitle {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #EA580C;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Featured Designs Section */
+.featuredDesigns {
+  padding: 5rem 0;
+  background: #FFF7ED;
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 350px;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.featuredItem.narrow {
+  grid-column: span 2;
+}
+
+.featuredItem.wide {
+  grid-column: span 3;
+}
+
+.featuredItem {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featuredItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featuredItem:hover img {
+  transform: scale(1.05);
+}
+
+/* Why Choose Us Section */
+.whyChooseUs {
+  padding: 5rem 0;
+  background: #FFE5C9;
+}
+
+.orangeText {
+  color: #EA580C;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.reasonCard {
+  background: transparent;
+  border: 4px solid;
+  border-radius: 24px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.reasonCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.reasonIcon {
+  background: transparent;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wcuIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.reasonText {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6B21A8;
+  /* Dark Purple for text as per likely contrast needs or image */
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* How We Work Section */
+.howWeWork {
+  padding: 5rem 0;
+  background: #FFF7ED;
+  text-align: center;
+}
+
+.sectionSubtext {
+  color: #6b7280;
+  margin-top: -2.5rem;
+  margin-bottom: 4rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stepItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.stepCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #EA580C;
+  color: #EA580C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stepContent h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.stepContent p {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+
+/* Responsive */
+.heroAuthLogo {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 120px;
+  height: auto;
+  z-index: 20;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 5px;
+}
+
+@media (max-width: 1024px) {
+  .designGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reasonsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .introContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .designGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stepsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featuredGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredItem:first-child {
+    grid-column: span 1;
+  }
+}

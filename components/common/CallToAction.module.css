@@ -1,0 +1,101 @@
+.ctaSection {
+    background: linear-gradient(8.6deg, #EA580C 31.52%, #FFD700 105.81%);
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    /* Maintain relative positioning for potential future assets */
+    position: relative;
+}
+
+.ctaContent {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.title {
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    /* identical to box height, or 111% */
+    letter-spacing: -0.9px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    /* 72px top offset for subtitle - 40px height = 32px gap approx */
+}
+
+.subtitle {
+    font-family: var(--font-noto-sans), sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #334155;
+    max-width: 611px;
+    margin-bottom: 40px;
+    /* Space before button */
+}
+
+.ctaButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 32px;
+    width: 170px;
+    height: 50px;
+    background: #6B21A8;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    font-family: var(--font-noto-sans), sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.ctaButton:hover {
+    background-color: #581c87;
+    transform: translateY(-2px);
+}
+
+.secondaryButton {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.secondaryButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .ctaSection {
+        padding: 60px 20px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+}

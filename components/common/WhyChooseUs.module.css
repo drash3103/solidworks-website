@@ -1,0 +1,219 @@
+.section {
+    background-color: #FFEDD5;
+    /* Darker peach to match image pattern */
+    padding: 6rem 0;
+    font-family: var(--font-noto-sans), sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #6B21A8;
+    /* purple-700 */
+    margin-bottom: 1rem;
+    font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.subheading {
+    color: #4B5563;
+    /* gray-600 */
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: var(--font-noto-sans), sans-serif;
+}
+
+.dividerWrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.divider {
+    height: 0.25rem;
+    width: 6rem;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #6B21A8, #EA580C);
+    display: block;
+}
+
+.gridContainer {
+    border: 2px solid #EA580C;
+    /* orange-500 */
+    border-radius: 40px;
+    padding: 3.5rem 2.5rem;
+    background-color: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.card {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 172px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem) scale(1.03);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.iconWrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover .iconWrapper {
+    transform: rotate(6deg) scale(1.1);
+}
+
+.cardTitle {
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* Variants */
+
+/* Orange */
+.orange {
+    background: rgba(234, 88, 12, 0.35);
+    border-color: #EA580C;
+    color: #EA580C;
+}
+
+.orange .iconWrapper {
+    border-color: #EA580C;
+}
+
+.orange .icon {
+    color: #EA580C;
+}
+
+.orange .cardTitle {
+    color: #EA580C;
+}
+
+/* Yellow (Maps to the Gold/Amber style) */
+.yellow {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(197, 157, 95, 0.35) 0%, rgba(245, 158, 11, 0.35) 100%);
+    border-color: #C59D5F;
+    color: #985D00;
+}
+
+.yellow .iconWrapper {
+    border-color: #C59D5F;
+}
+
+.yellow .icon {
+    color: #C59D5F;
+}
+
+.yellow .cardTitle {
+    color: #985D00;
+}
+
+/* Purple */
+.purple {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(58, 2, 104, 0.2) 0%, rgba(107, 33, 168, 0.2) 100%);
+    border-color: #6B21A8;
+    color: #6B21A8;
+}
+
+.purple .iconWrapper {
+    border-color: #6B21A8;
+}
+
+.purple .icon {
+    color: #6B21A8;
+}
+
+.purple .cardTitle {
+    color: #6B21A8;
+}
+
+/* Blue */
+.blue {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(47, 203, 255, 0.35) 0%, rgba(26, 115, 232, 0.35) 37.5%);
+    border-color: #001F5B;
+    color: #001F5B;
+}
+
+.blue .iconWrapper {
+    border-color: #001F5B;
+}
+
+.blue .icon {
+    color: #001F5B;
+}
+
+.blue .cardTitle {
+    color: #001F5B;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .section {
+        padding: 3rem 0;
+    }
+
+    .gridContainer {
+        padding: 1.5rem;
+        border-width: 2px;
+        border-radius: 24px;
+    }
+}

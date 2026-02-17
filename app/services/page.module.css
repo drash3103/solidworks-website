@@ -1,0 +1,277 @@
+.pageContainer {
+  width: 100%;
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 420px;
+  background-image: url('/services_hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 102, 0, 0.85) 40.4%, rgba(107, 33, 168, 0.85) 96.18%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.heroTitle {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Services Section */
+.servicesSection {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.servicesStack {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.serviceCard {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #FFF7ED;
+  /* Light orange tint */
+  border-radius: 20px;
+  padding: 3rem;
+  border: 1px solid #FED7AA;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.reverseCard {
+  flex-direction: row-reverse;
+  background-color: #FDF4FF;
+  /* Light purple tint for placement */
+  border-color: #E9D5FF;
+}
+
+.serviceContent {
+  flex: 1;
+}
+
+.serviceTitle {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #EA580C;
+  margin-bottom: 1.5rem;
+}
+
+.reverseCard .serviceTitle {
+  color: #c05621;
+  /* Darker orange for variety or keep uniform? using base color */
+  /* Actually design shows Placement title is orange too, so keep standard */
+}
+
+/* Design Service title actually has & split lines in design, keeping simple here flex */
+
+.serviceTextWrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.serviceText {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4B5563;
+}
+
+.knowMoreBtn {
+  display: inline-block;
+  background-color: #6B21A8;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.knowMoreBtn:hover {
+  background-color: rgba(107, 33, 168, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 33, 168, 0.2);
+}
+
+.serviceImageWrapper {
+  flex: 1;
+  max-width: 500px;
+  /* Constrain image width */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.serviceImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Excellence Section */
+.excellenceSection {
+  padding: 5rem 0;
+  background-color: white;
+  text-align: center;
+}
+
+.excellenceTitle {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6B21A8;
+  margin-bottom: 4rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.stepCard {
+  position: relative;
+  background: white;
+  padding: 2.5rem 1.5rem 1.5rem;
+  border: 2px solid var(--borderColor);
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.stepCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.stepCard:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--borderColor);
+  opacity: 0.85;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.stepCard:hover .stepTitle,
+.stepCard:hover .stepDesc {
+  color: white !important;
+  position: relative;
+  z-index: 1;
+}
+
+.stepCard:hover .stepNumber {
+  transform: translateX(-50%) scale(1.2);
+  z-index: 2;
+}
+
+.stepTitle,
+.stepDesc,
+.stepNumber {
+  position: relative;
+  z-index: 1;
+}
+
+.stepNumber {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stepCard:hover .stepNumber {
+  transform: translateX(-50%) scale(1.2);
+}
+
+.stepTitle {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.stepDesc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+.heroAuthLogo {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 120px;
+  height: auto;
+  z-index: 20;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 5px;
+}
+
+@media (max-width: 900px) {
+
+  .serviceCard,
+  .reverseCard {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}

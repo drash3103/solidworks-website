@@ -1,0 +1,72 @@
+.section {
+    background-color: #FFE3CB;
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #6B7280;
+    /* gray-500 */
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.marqueeContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* Optional: Add gradient mask for smooth fade in/out edges */
+    /* mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); */
+}
+
+.marqueeTrack {
+    display: flex;
+    gap: 4rem;
+    width: max-content;
+    animation: marquee 60s linear infinite;
+}
+
+.logoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    height: 80px;
+    /* Fixed container height */
+}
+
+.logoImage {
+    max-height: 50px;
+    /* Limit height */
+    max-width: 160px;
+    /* Limit width */
+    width: auto;
+    height: auto;
+    transition: all 0.3s ease;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    /* Helps logos blend with background if they have white backgrounds */
+}
+
+.logoItem:hover .logoImage {
+    mix-blend-mode: normal;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover for accessibility/user control */
+.marqueeTrack:hover {
+    animation-play-state: paused;
+}

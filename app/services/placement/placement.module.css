@@ -1,0 +1,408 @@
+.pageContainer {
+    width: 100%;
+    background-color: #FFF7ED;
+    /* Light background based on design */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 420px;
+    /* Increased height to match image proportion */
+    background-image: url('/services/placements.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+    /* Space for the overlapping stats bar */
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 102, 0, 0.85) 41.83%, rgba(107, 33, 168, 0.85) 100%);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.heroTitle {
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    line-height: 60px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Stats Bar */
+.statsContainer {
+    margin-top: -100px;
+    /* More overlap as seen in design */
+    margin-bottom: 2rem;
+    padding: 0 3rem;
+}
+
+.statsBar {
+    background: white;
+    border-radius: 12px;
+    border: 3px solid #ff6b00;
+    /* Vibrant orange border from image */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* Keep them in a row */
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    min-width: 150px;
+}
+
+.statIcon {
+    color: #ff6b00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.iconOrange {
+    color: #EA580C;
+    background-color: #FFF7ED;
+}
+
+.iconPurple {
+    color: #6B21A8;
+    background-color: #F3E8FF;
+}
+
+.iconGreen {
+    color: #16A34A;
+    background-color: #DCFCE7;
+}
+
+.iconRed {
+    color: #DC2626;
+    background-color: #FEE2E2;
+}
+
+.statNumber {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #5d2a9d;
+    /* Deep purple from image */
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #EA580C;
+    /* More vibrant orange for labels */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.statDivider {
+    width: 1px;
+    height: 60px;
+    background-color: #E5E7EB;
+}
+
+/* Description Section */
+.descSection {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.descBox {
+    border: 1px solid #EA580C;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background-color: white;
+    color: #4B5563;
+    font-size: 20px;
+    line-height: 1.7;
+    width: 100%;
+    max-width: 1400px;
+    /* Allow it to be wider than standard container if possible, or just fill */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+
+/* Who Can Apply Section */
+.applySection {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #6B21A8;
+    margin-bottom: 0.5rem;
+}
+
+.sectionSubtitle {
+    color: #6B7280;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionSubtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #F59E0B;
+    border-radius: 2px;
+}
+
+.cardsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.applyCard {
+    background: white;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    /* Crucial for clipping the filling effect */
+    transition: transform 0.3s ease;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 180px;
+}
+
+.applyCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Content z-index to stay on top of fill */
+.cardIconWrapper,
+.cardTitle,
+.cardSub {
+    position: relative;
+    z-index: 10;
+    transition: color 0.3s ease;
+}
+
+.cardIcon {
+    /* Need to target SVG path for color change logic if lucide supportscurrentColor? 
+       Actually lucide icons inherit color. so setting color on wrapper or icon works.
+    */
+    transition: stroke 0.3s ease;
+}
+
+/* Hover Fill Effect using Pseudo-element */
+.applyCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    /* Start from bottom */
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.applyCard:hover::before {
+    transform: translateY(0);
+}
+
+/* Specific Card Colors */
+/* Card 1: Orange */
+.cardOne::before {
+    background-color: #EA580C;
+}
+
+.cardOne:hover .cardTitle,
+.cardOne:hover .cardSub {
+    color: white;
+}
+
+.cardOne:hover .cardIcon {
+    stroke: white;
+}
+
+/* Card 2: Yellow */
+.cardTwo::before {
+    background-color: #F59E0B;
+}
+
+.cardTwo:hover .cardTitle,
+.cardTwo:hover .cardSub {
+    color: white;
+}
+
+.cardTwo:hover .cardIcon {
+    stroke: white;
+}
+
+/* Card 3: Purple */
+.cardThree::before {
+    background-color: #6B21A8;
+}
+
+.cardThree:hover .cardTitle,
+.cardThree:hover .cardSub {
+    color: white;
+}
+
+.cardThree:hover .cardIcon {
+    stroke: white;
+}
+
+
+.cardIconWrapper {
+    background-color: #FFF7ED;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Need to make wrapper transparent on hover or change its bg? 
+   let's allow the color fill to cover it, but icon needs to be visible.
+   Actually design shows icon background might persist or blend. 
+   Simplest: make wrapper transparent on hover? 
+*/
+.applyCard:hover .cardIconWrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 0.25rem;
+}
+
+.cardSub {
+    font-size: 0.875rem;
+    color: #6B7280;
+}
+
+/* Trusted Section */
+.trustedSection {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.trustedTitle {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #6B7280;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .heroTitle {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .statDivider {
+        display: none;
+    }
+
+    .statsBar {
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+    }
+
+    .statItem {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 350px;
+        padding-bottom: 40px;
+    }
+
+    .heroTitle {
+        font-size: 2.25rem;
+    }
+
+    .statsContainer {
+        margin-top: -60px;
+    }
+
+    .statsBar {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .statItem {
+        width: 100%;
+    }
+
+    .statNumber {
+        font-size: 1.75rem;
+    }
+}
+
+.heroAuthLogo {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: auto;
+    z-index: 20;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 5px;
+}

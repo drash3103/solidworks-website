@@ -1,0 +1,88 @@
+{
+  "courses": [
+    {
+      "id": "cswa",
+      "title": "SOLIDWORKS CAD Design Associate (CSWA)",
+      "description": "Entry-level course focused on core 3D modeling, assemblies, and basic engineering drawings.",
+      "image": "/courses/cswa.png"
+    },
+    {
+      "id": "cswp",
+      "title": "SOLIDWORKS CAD Design Professional (CSWP)",
+      "description": "Advanced modeling course emphasizing complex parts, assemblies, configurations, and design intent.",
+      "image": "/courses/cswp.png"
+    },
+    {
+      "id": "cswp-sm",
+      "title": "SOLIDWORKS CAD Design Sheet Metal Professional (CSWP-SM)",
+      "description": "Specialized training in sheet metal design, flat patterns, bend calculations, and manufacturing-ready models.",
+      "image": "/courses/cswp-sm.png"
+    },
+    {
+      "id": "cswp-wd",
+      "title": "SOLIDWORKS CAD Design Weldments Professional (CSWP-WD)",
+      "description": "Professional-level course covering structural weldment design, cut lists, and fabrication drawings.",
+      "image": "/courses/cswp-wd.png"
+    },
+    {
+      "id": "cswp-su",
+      "title": "SOLIDWORKS CAD Design Surfacing Professional (CSWP-SU)",
+      "description": "Advanced surfacing course for creating complex, aesthetic, and free-form industrial designs.",
+      "image": "/courses/cswp-su.png"
+    },
+    {
+      "id": "cswp-dt",
+      "title": "SOLIDWORKS CAD Design Drawing Tools Professional (CSWP-DT)",
+      "description": "In-depth training on professional drawing creation, GD&T, annotations, and detailing standards.",
+      "image": "/courses/cswp-dt.png"
+    },
+    {
+      "id": "cswp-mm",
+      "title": "SOLIDWORKS CAD Design Mold Making Professional (CSWP-MM)",
+      "description": "Specialized course focused on plastic part design, mold tools, core-cavity creation, and manufacturability.",
+      "image": "/courses/cswp-mm.png"
+    },
+    {
+      "id": "cswe",
+      "title": "SOLIDWORKS CAD Design Expert (CSWE)",
+      "description": "Expert-level certification course demonstrating mastery of advanced SOLIDWORKS design techniques.",
+      "image": "/courses/cswe.png"
+    },
+    {
+      "id": "cswa-s",
+      "title": "SOLIDWORKS Simulation Associate (CSWA-S)",
+      "description": "Introduction to structural simulation concepts, basic stress analysis, and result interpretation.",
+      "image": "/courses/cswa-s.png"
+    },
+    {
+      "id": "cswp-s",
+      "title": "SOLIDWORKS Simulation Professional (CSWP-S)",
+      "description": "Advanced simulation training covering nonlinear studies, contacts, and real-world load conditions.",
+      "image": "/courses/cswp-s.png"
+    },
+    {
+      "id": "cswe-s",
+      "title": "SOLIDWORKS Simulation Expert (CSWE-S)",
+      "description": "Expert-level simulation course focused on complex analyses, validation, and engineering decision-making.",
+      "image": "/courses/cswe-s.png"
+    },
+    {
+      "id": "cswp-flow",
+      "title": "SOLIDWORKS Flow Simulation Professional (CSWP-Flow)",
+      "description": "Professional CFD course for analyzing fluid flow, heat transfer, and real-world thermal performance.",
+      "image": "/courses/cswp-flow.png"
+    },
+    {
+      "id": "cswp-cam",
+      "title": "SOLIDWORKS CAM Professional (CSWP-CAM)",
+      "description": "Advanced manufacturing course covering CNC machining, toolpath strategies, and production optimization.",
+      "image": "/courses/cswp-cam.png"
+    },
+    {
+      "id": "3d-printing",
+      "title": "3D Printing",
+      "description": "Learn end-to-end 3D printing—from design optimization to slicing, materials, and real-world production applications.",
+      "image": "/courses/3d-printing.png"
+    }
+  ]
+}

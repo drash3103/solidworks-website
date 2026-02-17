@@ -1,0 +1,18 @@
+.processCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+}
+
+.processCard h3 {
+  color: #0070f3;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.processCard p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 0.9375rem;
+}

@@ -1,0 +1,307 @@
+/* Wrapper */
+.navbarWrapper {
+  width: 100%;
+  font-family: var(--font-noto-sans), sans-serif;
+  background-color: white;
+  /* Ensure background is opaque */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Top Bar */
+.topBar {
+  background-color: #EA580C;
+  color: white;
+  font-size: 14px;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inquiryText {
+  font-style: italic;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.socialIcons svg:hover {
+  opacity: 0.8;
+}
+
+/* WhatsApp circle */
+.whatsappIcon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.navbarContainer {
+  width: 100%;
+  padding: 12px 40px;
+  /* Increased padding for better edge appearance */
+  display: flex;
+  align-items: center;
+}
+
+/* Brand Section */
+.brandContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brandName {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6B21A8;
+  white-space: nowrap;
+}
+
+/* Logo */
+.logo img {
+  height: 70px;
+  width: auto;
+}
+
+/* Menu */
+.navMenu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  font-family: var(--font-noto-sans), sans-serif;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.navMenu li {
+  cursor: pointer;
+  color: #6B21A8;
+}
+
+.navMenu li:hover {
+  color: #EA580C;
+}
+
+.navMenu .active {
+  color: #EA580C;
+}
+
+/* CTA Button */
+.ctaButton {
+  background-color: #EA580C;
+  color: white;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #c94a06;
+}
+
+.desktopCta {
+  display: block;
+}
+
+.mobileCta {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Dropdown Styles */
+.dropdownParent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navLinkWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-width: 250px;
+  padding: 12px 0;
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  z-index: 200;
+  list-style: none;
+  margin: 0;
+}
+
+.dropdownParent:hover .dropdownMenu {
+  display: flex;
+}
+
+.dropdownMenu li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #374151;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.dropdownMenu li a:hover {
+  background-color: #FFF7ED;
+  color: #EA580C;
+}
+
+/* Mobile Adjustments */
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #6B21A8;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+  .navbarContainer {
+    padding: 12px 20px;
+  }
+
+  .navMenu {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .brandName {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .topBar {
+    display: none;
+    /* Hide top bar on mobile for cleaner look */
+  }
+
+  .mobileMenuBtn {
+    display: block;
+  }
+
+  .desktopCta {
+    display: none;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .brandName {
+    font-size: 16px;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 74px;
+    /* Adjust based on header height */
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 74px);
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    gap: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navMenu.mobileVisible {
+    left: 0;
+  }
+
+  .dropdownParent {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    display: none;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #FFF7ED;
+  }
+
+  .dropdownParent:hover .dropdownMenu,
+  .dropdownParent:active .dropdownMenu {
+    display: flex;
+  }
+
+  .mobileCta {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .brandName {
+    display: none;
+    /* Hide brand name text on very small screens to keep logo */
+  }
+}
