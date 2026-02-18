@@ -31,7 +31,7 @@ const features = [
     },
     {
         title: "Personalised Training",
-        icon: UserCheck,
+        icon: "/icons/business-training.png",
         variant: "yellow",
     },
     {
@@ -51,17 +51,17 @@ const features = [
     },
     {
         title: "1000+ industry connections for placements",
-        icon: Users2,
+        icon: "/icons/partnership.png",
         variant: "purple",
     },
     {
         title: "Practical Oriented Training",
-        icon: BookOpen,
+        icon: "/icons/laptop-man.png",
         variant: "yellow",
     },
     {
         title: "Offline and Mentored Online Training",
-        icon: MonitorPlay,
+        icon: "/icons/online-counseling.png",
         variant: "blue",
     },
 ];
@@ -87,13 +87,47 @@ export default function WhyChooseUs({ className }) {
                     <div className={styles.grid}>
                         {features.map((item, index) => {
                             const Icon = item.icon;
+                            // Check if icon is a string (path to image) or component
+                            const isImage = typeof Icon === 'string';
+
+                            // Color mapping based on WhyChooseUs.module.css
+                            const variantColors = {
+                                orange: '#EA580C',
+                                yellow: '#985D00',
+                                purple: '#6B21A8',
+                                blue: '#001F5B',
+                            };
+
+                            const iconColor = variantColors[item.variant] || '#000';
+
                             return (
                                 <div
                                     key={index}
                                     className={`${styles.card} ${styles[item.variant]}`}
                                 >
                                     <div className={styles.iconWrapper}>
-                                        <Icon className={styles.icon} size={26} />
+                                        {isImage ? (
+                                            <div
+                                                className={styles.icon}
+                                                style={{
+                                                    width: '26px',
+                                                    height: '26px',
+                                                    backgroundColor: iconColor,
+                                                    maskImage: `url(${Icon})`,
+                                                    WebkitMaskImage: `url(${Icon})`,
+                                                    maskMode: 'alpha',
+                                                    WebkitMaskMode: 'alpha',
+                                                    maskRepeat: 'no-repeat',
+                                                    WebkitMaskRepeat: 'no-repeat',
+                                                    maskPosition: 'center',
+                                                    WebkitMaskPosition: 'center',
+                                                    maskSize: 'contain',
+                                                    WebkitMaskSize: 'contain',
+                                                }}
+                                            />
+                                        ) : (
+                                            <Icon className={styles.icon} size={26} />
+                                        )}
                                     </div>
                                     <p className={styles.cardTitle}>{item.title}</p>
                                 </div>

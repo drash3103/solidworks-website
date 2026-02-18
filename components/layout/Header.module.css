@@ -33,21 +33,15 @@
   cursor: pointer;
 }
 
-.socialIcons svg:hover {
-  opacity: 0.8;
-}
-
-/* WhatsApp circle */
-.whatsappIcon {
-  width: 20px;
-  height: 20px;
-  border: 1px solid white;
-  border-radius: 50%;
+.socialIcons a {
+  color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.socialIcons a:hover {
+  color: #6B21A8;
 }
 
 /* Navbar */

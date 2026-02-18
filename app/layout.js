@@ -1,6 +1,7 @@
 import { Inter, Space_Grotesk, Noto_Sans, Source_Sans_3 } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import FloatingWhatsApp from '@/components/common/FloatingWhatsApp';
 import StructuredData from '@/components/seo/StructuredData';
 import { generateOrganizationSchema } from '@/utils/seo';
 import siteMeta from '@/content/siteMeta.json';
@@ -93,6 +94,7 @@ export default function RootLayout({ children }) {
         </a>
         <Header />
         <main id="main-content">{children}</main>
+        <FloatingWhatsApp />
         <Footer />
       </body>
     </html>
