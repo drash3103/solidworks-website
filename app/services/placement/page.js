@@ -18,7 +18,7 @@ export default function PlacementPage() {
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Placement Assistance Program</h1>
+          <h1 className={styles.heroTitle}>Placement Assistance</h1>
         </div>
         <img
           src="/solidworks-autho-centre.jpg"

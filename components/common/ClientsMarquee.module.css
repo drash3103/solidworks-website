@@ -34,15 +34,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 160px;
-    height: 80px;
+    min-width: 200px;
+    height: 120px;
     /* Fixed container height */
 }
 
 .logoImage {
-    max-height: 50px;
+    max-height: 80px;
     /* Limit height */
-    max-width: 160px;
+    max-width: 200px;
     /* Limit width */
     width: auto;
     height: auto;

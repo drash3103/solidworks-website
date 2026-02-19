@@ -58,7 +58,7 @@ export default function TestimonialsPage() {
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
                 <div className={styles.heroContent}>
-                    <h1 className={styles.heroTitle}>Voices of Our Customers</h1>
+                    <h1 className={styles.heroTitle}>Voice of The Customers</h1>
                     <div className={styles.ratingBadge}>
                         <div className={styles.ratingScore}>4.9</div>
                         <div className={styles.ratingText}>
