@@ -72,32 +72,29 @@ export default function GalleryPage() {
             </section>
 
             <div className={styles.container}>
-                {Object.entries(galleryData).map(([categoryTitle, data]) => (
-                    <section key={categoryTitle} className={styles.categorySection}>
-                        <h2 className={styles.categoryTitle}>{categoryTitle}</h2>
-                        <div className={styles.grid}>
-                            {data.files.map((file, index) => (
-                                <a
-                                    key={index}
-                                    href={`/gallery_Img/${data.dirName}/${file}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.card}
-                                >
-                                    <div className={styles.cardContent}>
-                                        {/* Display JPG preview */}
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img
-                                            src={`/gallery_Img/${data.dirName}/${file.replace('.pdf', '.jpg').replace('.PDF', '.jpg')}`}
-                                            alt={file}
-                                            className={styles.pdfPreview}
-                                        />
-                                    </div>
-                                </a>
-                            ))}
-                        </div>
-                    </section>
-                ))}
+                <div className={styles.grid}>
+                    {Object.values(galleryData).flatMap(data =>
+                        data.files.map(file => ({ ...data, file }))
+                    ).map(({ dirName, file }, index) => (
+                        <a
+                            key={index}
+                            href={`/gallery_Img/${dirName}/${file}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.card}
+                        >
+                            <div className={styles.cardContent}>
+                                {/* Display JPG preview */}
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img
+                                    src={`/gallery_Img/${dirName}/${file.replace('.pdf', '.jpg').replace('.PDF', '.jpg')}`}
+                                    alt={file}
+                                    className={styles.pdfPreview}
+                                />
+                            </div>
+                        </a>
+                    ))}
+                </div>
 
                 {Object.keys(galleryData).length === 0 && (
                     <div className="text-center py-12">
