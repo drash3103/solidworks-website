@@ -14,18 +14,20 @@ const images = [
     '/hero/3d2.jpeg',
     '/hero/int1.jpeg',
     '/hero/int2.jpeg',
+    '/hero/home_hero2.png',
+    '/hero/home_hero3.png',
 ];
 
 const contentSets = [
     {
-        heading: <><span className={styles.orangeText}>SOLIDWORKS</span> Training</>,
-        tagline: "Authorized SOLIDWORKS Training for Industry-Ready DESIGN Engineers",
-        description: "Hands-on training in CAD, CAE, CAM, Simulation, CFD, and 3D Printing—delivered by a Dassault Systèmes–Authorized Training Centre."
+        heading: <>Upgrade your CAD Skills with <br /><span className={styles.orangeText}>Authorized SOLIDWORKS Training Partner</span></>,
+        tagline: "Practical SOLIDWORKS Training for CAD, CAE, CAM, Simulation, and 3D Printing.",
+        description: "Corporate-Focused SOLIDWORKS Training Aligned with Organizations Needs. Internships, Projects, and Placements for Job-Ready DESIGN Engineers."
     },
     {
         heading: <><span className={styles.orangeText}>Placement</span> Assistance</>,
         tagline: "Launch Your Career with Industry Leaders",
-        description: "Connecting our students with 1000+ top companies through dedicated career support and mentorship."
+        description: "Connecting our students with 1000+ top companies through dedicated career support and mentorship. Bridging the Gap Between Engineering Education and Industry Careers in DESIGN"
     },
     {
         heading: <><span className={styles.orangeText}>Design</span> Services</>,
@@ -33,9 +35,14 @@ const contentSets = [
         description: "Expert CAD drafting, 3D modeling, and qualified design manpower support for your mechanical projects."
     },
     {
-        heading: <><span className={styles.orangeText}>Advanced</span> Engineering</>,
-        tagline: "Innovation through Simulation & Prototyping",
-        description: "Transforming concepts into reality with advanced CAE analysis, CFD, and industrial 3D printing expertise."
+        heading: <><span className={styles.orangeText}>One Stop</span> SOLIDWORKS Solutions</>,
+        tagline: "SOLIDWORKS Authorized Training, Placement and Design Centre",
+        description: "Learn Design, Lead the World"
+    },
+    {
+        heading: <><span className={styles.orangeText}>Advanced</span> 3D Printing Training and Job Work Services</>,
+        tagline: "Learn 3D Printing the Right Way – Practical, Professional, Production-Focused.",
+        description: "Complete 3D Printing Solutions – Training + Custom Job Work Services. Learn, Design, Manufacture – Complete 3D Printing Ecosystem Under One Roof."
     }
 ];
 

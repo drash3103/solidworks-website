@@ -84,7 +84,7 @@ export default function ServicesPage() {
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Our Services</h1>
+          <h1 className={styles.heroTitle}>Services We Offer</h1>
         </div>
         <img
           src="/solidworks-autho-centre.jpg"
