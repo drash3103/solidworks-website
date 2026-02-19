@@ -73,7 +73,7 @@ export default function Header() {
             <div className={styles.logo}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/logo.jpeg"
+                src="/images/logo.png"
                 alt="Bhavya Future EduTech"
               />
             </div>

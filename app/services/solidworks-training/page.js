@@ -123,7 +123,7 @@ export default function SolidWorksTrainingPage() {
       {/* Certifications Section */}
       <section className={styles.certifications}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>SOLIDWORKS International Certifications</h2>
+          <h2 className={styles.certTitle}>SOLIDWORKS International Certifications</h2>
           <div className={styles.certGrid}>
             {certifications.map((cert) => (
               <div key={cert.id} className={styles.certItem}>
@@ -140,13 +140,13 @@ export default function SolidWorksTrainingPage() {
       </section>
 
       {/* Benefits / Why Choose Us */}
-      <WhyChooseUs />
+      <WhyChooseUs className={styles.whyChooseUsOverride} />
 
       {/* Roles Section */}
       <section className={styles.roles}>
         <div className="container">
           <div className={styles.rolesHeader}>
-            <h2 className={styles.sectionTitle}>Roles we prepare your for</h2>
+            <h2 className={styles.rolesTitle}>Roles we prepare your for</h2>
             <div className={styles.titleDivider}></div>
           </div>
           <div className={styles.rolesGrid}>
