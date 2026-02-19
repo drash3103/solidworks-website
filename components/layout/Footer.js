@@ -90,11 +90,10 @@ export default function Footer() {
           </p>
 
           <div className={styles.social}>
-            <a href="https://www.instagram.com/solidworks_authorised_center?igsh=eG94d2w5M2tjemQ2" aria-label="Instagram"><Instagram size={24} /></a>
-            <a href="https://wa.me/+918320977346 " aria-label="WhatsApp"><Phone size={24} /></a> {/* Using Phone as generic replacement if MessageCircle not available, but Lucide has MessageCircle/Phone */}
-            <a href="mailto:solidworks.trainingcentre@gmail.com" aria-label="Email"><Mail size={24} /></a>
-            <a href="http://www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara" aria-label="LinkedIn"><Linkedin size={24} /></a>
-            <a href="https://www.facebook.com/profile.php?id=61583191423828#" aria-label="Facebook"><Facebook size={24} /></a>
+            <a href="https://www.instagram.com/solidworks_authorised_center?igsh=eG94d2w5M2tjemQ2" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={24} /></a>
+            <a href="https://wa.me/+918320977346 " target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><Phone size={24} /></a> {/* Using Phone as generic replacement if MessageCircle not available, but Lucide has MessageCircle/Phone */}
+            <a href="http://www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin size={24} /></a>
+            <a href="https://www.facebook.com/profile.php?id=61583191423828#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={24} /></a>
           </div>
 
           <p className={styles.credits}>

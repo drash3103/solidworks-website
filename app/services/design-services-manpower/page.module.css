@@ -5,7 +5,8 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 420px;
+  min-height: 420px;
+  height: auto;
   background-image: url('/design_services_hero_v2.png');
   background-size: cover;
   background-position: center;
@@ -361,5 +362,13 @@
     /* Mobile size */
     bottom: 60px;
     right: 20px;
+  }
+
+  .introSection,
+  .designServices,
+  .featuredDesigns,
+  .whyChooseUs,
+  .howWeWork {
+    padding: 3rem 0;
   }
 }

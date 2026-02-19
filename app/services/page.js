@@ -131,7 +131,7 @@ export default function ServicesPage() {
       {/* Excellence Section */}
       <section className={styles.excellenceSection}>
         <div className="container">
-          <h2 className={styles.excellenceTitle}>How We Deliver Excellence</h2>
+          <h2 className={styles.excellenceTitle}>How Bhavya Future Edutech Delivers Excellence</h2>
           <div className={styles.stepsGrid}>
             {steps.map((step) => (
               <div
@@ -152,7 +152,7 @@ export default function ServicesPage() {
 
       {/* CTA Section */}
       <CallToAction
-        title="Ready to Start Your Solidworks Journey?"
+        title="Ready to Start Your SOLIDWORKS Journey?"
         subtitle={null}
         buttonText="Contact Us Today"
         buttonLink="/contact"

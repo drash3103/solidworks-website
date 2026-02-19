@@ -13,7 +13,7 @@ import styles from './page.module.css';
 export const metadata = generateSEOMetadata({
   title: 'Home',
   description:
-    'Leading provider of SolidWorks training, placement services, and design engineering manpower solutions. Transform your career with expert-led courses and industry connections.',
+    'Leading provider of SOLIDWORKS training, placement services, and design engineering manpower solutions. Transform your career with expert-led courses and industry connections.',
   canonical: '/',
 });
 
@@ -134,7 +134,7 @@ export default function HomePage() {
             <h2 className={styles.ctaHeading}>
               Ready to Accelerate Your <span>Design Engineering Career?</span>
             </h2>
-            <p className={styles.ctaParagraph}>Join the ranks of certified professionals.</p>
+
             <div className={styles.ctaButtons}>
               <Link href="/services/solidworks-training" className={styles.ctaButton}>
                 View All Courses

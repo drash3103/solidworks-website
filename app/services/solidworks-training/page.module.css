@@ -1,7 +1,8 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 420px;
+  min-height: 420px;
+  height: auto;
   background-image: url('/training_hero_v2.png');
   background-size: cover;
   background-position: center;

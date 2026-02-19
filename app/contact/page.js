@@ -9,7 +9,7 @@ export const metadata = generateSEOMetadata({
 });
 
 export default function ContactPage() {
-    const googleMapsUrl = "https://www.google.com/maps/dir//Bhavya+Future+EduTech+-+SolidWorks+Authorized+Training+Center+8th+Floor,+Yashkamal+Building+Sayajigunj,+Vadodara,+Gujarat+390005";
+    const googleMapsUrl = "https://www.google.com/maps/dir//Bhavya+Future+EduTech+-+SOLIDWORKS+Authorized+Training+Center+8th+Floor,+Yashkamal+Building+Sayajigunj,+Vadodara,+Gujarat+390005";
 
     return (
         <div className={styles.pageContainer}>
@@ -87,12 +87,24 @@ export default function ContactPage() {
                             <div className={styles.socialSection}>
                                 <p className={styles.socialLabel}>Follow on our socials</p>
                                 <div className={styles.socialIcons}>
-                                    <a href="https://www.instagram.com/solidworks_authorised_center?igsh=eG94d2w5M2tjemQ2" className={styles.socialLink}><Instagram size={24} /></a>
-                                    <a href="+91 83209 77346" className={styles.socialLink}><Phone size={24} /></a> {/* WhatsApp usually represented by phone or message circle if Brand icon not available, using Phone for consistency or MessageCircle? Design shows Whatsapp logo. Lucide has MessageCircle or standard icons only. Will stick to available ones or SVG if needed. Used Phone as placeholder or check if MessageCircle is better.. Actually I remember Lucide has no Brand icons. Footer uses custom SVGs or specific imports. I'll use text or generic for now */}
+                                    <a href="https://www.instagram.com/solidworks_authorised_center?igsh=eG94d2w5M2tjemQ2" target="_blank" rel="noopener noreferrer" className={styles.socialLink}><Instagram size={24} /></a>
+                                    <a href="https://wa.me/+918320977346" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="WhatsApp">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            height="24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            fill="none"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                        >
+                                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                        </svg>
+                                    </a>
                                     {/* Re-checking footer implementation for consistent icons */}
-                                    <a href="#" className={styles.socialLink}><Mail size={24} /></a>
-                                    <a href="http://www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara" className={styles.socialLink}><Linkedin size={24} /></a>
-                                    <a href="#" className={styles.socialLink}><Facebook size={24} /></a>
+                                    <a href="http://www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara" target="_blank" rel="noopener noreferrer" className={styles.socialLink}><Linkedin size={24} /></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61583191423828#" target="_blank" rel="noopener noreferrer" className={styles.socialLink}><Facebook size={24} /></a>
                                 </div>
                             </div>
                         </div>

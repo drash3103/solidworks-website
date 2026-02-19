@@ -15,7 +15,7 @@ import styles from "./WhyChooseUs.module.css";
 
 const features = [
     {
-        title: "Solidworks Authorised Partner",
+        title: "SOLIDWORKS Authorised Partner",
         icon: BadgeCheck,
         variant: "orange",
     },
@@ -35,7 +35,7 @@ const features = [
         variant: "yellow",
     },
     {
-        title: "Solidworks Certified Faculties",
+        title: "SOLIDWORKS Certified Faculties",
         icon: GraduationCap,
         variant: "blue",
     },
@@ -74,7 +74,7 @@ export default function WhyChooseUs({ className }) {
                 <div className={styles.header}>
                     <h2 className={styles.heading}>Why Choose Us</h2>
                     <p className={styles.subheading}>
-                        We don’t just teach software; we teach engineering design. Our unique
+                        At Bhavya Future Edutech, we don’t just teach software; we teach engineering design. Our unique
                         approach ensures the why behind every click.
                     </p>
                     <div className={styles.dividerWrapper}>

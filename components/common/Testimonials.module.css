@@ -55,7 +55,7 @@
 @media (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;
+        align-items: start;
         /* Vertically align cards if heights differ */
     }
 }
@@ -67,7 +67,6 @@
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 100%;
     font-family: var(--font-noto-sans), sans-serif;
 }
 
@@ -92,7 +91,9 @@
 }
 
 .cardDefault .readMore {
-    color: white;
+    color: #FACC15;
+    /* Yellow */
+    font-weight: 700;
 }
 
 .avatarDefault {
@@ -129,7 +130,7 @@
 
 .cardHighlight .readMore {
     color: #EA580C;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .cardHighlight .authorName {

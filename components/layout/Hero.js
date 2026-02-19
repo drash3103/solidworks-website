@@ -6,19 +6,19 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import styles from './Hero.module.css';
 
 const images = [
-    '/hero/trai1.jpeg',
-    '/hero/trai2.png',
+    '/hero/company_banner.png',
+    '/hero/training_banner.png',
     '/hero/plac1.jpeg',
-    '/hero/plac2.jpeg',
-    '/hero/3d1.jpeg',
-    '/hero/3d2.jpeg',
-    '/hero/int1.jpeg',
-    '/hero/int2.jpeg',
-    '/hero/home_hero2.png',
-    '/hero/home_hero3.png',
+    '/hero/3d1.jpeg', // Design Services
+    '/hero/3d2.jpeg', // 3D Printing
 ];
 
 const contentSets = [
+    {
+        heading: <><span className={styles.orangeText}>One Stop</span> SOLIDWORKS Solutions</>,
+        tagline: "SOLIDWORKS Authorized Training, Placement and Design Centre",
+        description: "Learn Design, Lead the World"
+    },
     {
         heading: <>Upgrade your CAD Skills with <br /><span className={styles.orangeText}>Authorized SOLIDWORKS Training Partner</span></>,
         tagline: "Practical SOLIDWORKS Training for CAD, CAE, CAM, Simulation, and 3D Printing.",
@@ -30,14 +30,9 @@ const contentSets = [
         description: "Connecting our students with 1000+ top companies through dedicated career support and mentorship. Bridging the Gap Between Engineering Education and Industry Careers in DESIGN"
     },
     {
-        heading: <><span className={styles.orangeText}>Design</span> Services</>,
-        tagline: "Professional Engineering & Manpower Solutions",
-        description: "Expert CAD drafting, 3D modeling, and qualified design manpower support for your mechanical projects."
-    },
-    {
-        heading: <><span className={styles.orangeText}>One Stop</span> SOLIDWORKS Solutions</>,
-        tagline: "SOLIDWORKS Authorized Training, Placement and Design Centre",
-        description: "Learn Design, Lead the World"
+        heading: <><span className={styles.orangeText}>Design</span> Services and Manpower Solutions</>,
+        tagline: "Professional CAD/CAM Design Services and Design Engineering Manpower",
+        description: "End-to-End 3D Design, CAD/CAM Services, and Design Engineering Manpower Solutions. From Concept Design to Manufacturing-Ready Drawings—Delivered with Accuracy. On-Demand Engineering Design Services and Manpower for Industrial Excellence."
     },
     {
         heading: <><span className={styles.orangeText}>Advanced</span> 3D Printing Training and Job Work Services</>,
@@ -72,8 +67,7 @@ export default function Hero() {
         }
     }, [isPaused, nextSlide]);
 
-    const contentIndex = Math.floor(currentImage / 2);
-    const activeContent = contentSets[contentIndex];
+    const activeContent = contentSets[currentImage];
 
     return (
         <section
@@ -117,7 +111,7 @@ export default function Hero() {
                         </div>
 
                         <div className={styles.buttonGroup}>
-                            <button className={styles.primaryBtn}>Solidworks Training</button>
+                            <button className={styles.primaryBtn}>SOLIDWORKS Training</button>
                             <button className={styles.secondaryBtn}>Placements</button>
                             <button className={styles.secondaryBtn}>
                                 Design Services & Man Power Supply

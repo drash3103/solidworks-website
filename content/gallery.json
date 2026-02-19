@@ -2,10 +2,10 @@
   "gallery": [
     {
       "id": "training-session-1",
-      "title": "SolidWorks Training Session",
+      "title": "SOLIDWORKS Training Session",
       "description": "Students learning advanced CAD techniques in our modern training facility",
       "category": "training",
-      "alt": "Students working on SolidWorks projects in computer lab"
+      "alt": "Students working on SOLIDWORKS projects in computer lab"
     },
     {
       "id": "placement-success-1",

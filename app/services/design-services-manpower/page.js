@@ -83,7 +83,7 @@ const reasons = [
 
 const workSteps = [
   { id: 1, title: 'Concept Discussion', desc: 'Understanding your design requirements and project scope.', icon: Search },
-  { id: 2, title: 'Detailed Engineering:2D Drafting/Sketch Preparation', desc: 'Developing precise 2D/3D CAD models and assemblies.', icon: Box },
+  { id: 2, title: 'Detailed Engineering', desc: '2D Drafting/Sketch Preparation', icon: Box },
   { id: 3, title: '3D Design ', desc: 'Prototype development using advanced 3D printing tech.', icon: Printer },
   { id: 4, title: 'Solution Delivery', desc: 'Final project delivery and post-production support.', icon: Truck },
 ];
@@ -122,13 +122,13 @@ export default function DesignServicesManpowerPage() {
           <div className={styles.introContent}>
             <div className={styles.introText}>
               <p>
-                We are a professionally managed engineering design consultancy based in <span className={styles.highlight}>Vadodara, Gujarat</span>, specializing in <span className={styles.highlight}>CAD drafting, engineering design services, and manpower supply</span>. Our mission is to bridge technical excellence with practical solutions by providing skilled resources and accurate, production-ready designs to support industry needs.
+                Bhavya Future EduTech is a professionally managed engineering design consultancy based in <span className={styles.highlight}>Vadodara, Gujarat</span>, specializing in <span className={styles.highlight}>CAD drafting, engineering design services, and manpower supply</span>. Our mission is to bridge technical excellence with practical solutions by providing skilled resources and accurate, production-ready designs to support industry needs.
               </p>
               <p>
                 Backed by a strong foundation in engineering knowledge and industry best practices, we deliver <span className={styles.highlight}>high-quality, cost-effective, and timely solutions</span> tailored to the unique requirements of each project. Along with design and drafting services, we offer <span className={styles.highlight}>qualified design engineering manpower</span> to support client operations, project execution, and workforce requirements across industries.
               </p>
               <p>
-                We are committed to working within defined budgets and timelines while maintaining the highest standards of accuracy, quality, and professionalism. Beyond service delivery, we focus on building <span className={styles.highlight}>long-term partnerships</span> based on trust, transparency, and reliability.
+                Bhavya Future EduTech is committed to working within defined budgets and timelines while maintaining the highest standards of accuracy, quality, and professionalism. Beyond service delivery, we focus on building <span className={styles.highlight}>long-term partnerships</span> based on trust, transparency, and reliability.
               </p>
               <p>
                 Client satisfaction is at the core of everything we do. Through value-added services, skilled manpower support, and ethical practices, we strive to exceed expectations and establish ourselves as a trusted engineering design and manpower solutions partner.
@@ -210,7 +210,7 @@ export default function DesignServicesManpowerPage() {
       {/* How We Work Section */}
       <section className={styles.howWeWork}>
         <div className="container">
-          <h2 className={`${styles.sectionTitle} ${styles.withBar}`}>Our Approach</h2>
+          <h2 className={`${styles.sectionTitle}`}>Our Approach</h2>
           <p className={styles.sectionSubtext}>Accelerating Excellence through our design stages.</p>
           <div className={styles.stepsGrid}>
             {workSteps.map((step) => {

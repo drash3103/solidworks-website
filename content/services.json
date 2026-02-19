@@ -2,9 +2,9 @@
   "services": [
     {
       "id": "solidworks-training",
-      "title": "SolidWorks Training",
+      "title": "SOLIDWORKS Training",
       "shortDescription": "Industry focussed SOLIDWORKS training programs aligned with global certifications",
-      "fullDescription": "Our comprehensive SolidWorks training program is designed for both beginners and professionals looking to enhance their CAD skills. Learn from certified instructors with real-world industry experience.",
+      "fullDescription": "Our comprehensive SOLIDWORKS training program is designed for both beginners and professionals looking to enhance their CAD skills. Learn from certified instructors with real-world industry experience.",
       "slug": "solidworks-training",
       "icon": "🎓",
       "features": [

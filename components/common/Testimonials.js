@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import { Star, Quote } from 'lucide-react';
 import styles from './Testimonials.module.css';
 import Button from './Button';
@@ -6,9 +8,9 @@ import Button from './Button';
 const reviews = [
     {
         id: 1,
-        name: 'Mihir Patel',
-        initials: 'MP',
-        text: 'I am very satisfied with the facilities and the overall teaching approach. The class timings are convenient and suitable for everyone. Faculty members are highly experienced, approachable, and always willing to resolve doubts. Their teaching methodology is excellent, and the syllabus is well-structured. I learned many new concepts related to designing, which completely changed my perspective on the design field. I am truly grateful to all the teachers for their constant support and guidance.',
+        name: 'Dharmesh Prajapati',
+        initials: 'DP',
+        text: 'Excellent SolidWorks Training Experience! I recently joined the SolidWorks Authorized Training Centre to switch my career as a Design Engineer and it has been a great learning journey so far. The centre uses original licensed SolidWorks software, so we get access to all the real features used in the industry. The teaching style is very clear and practical, with individual attention and personal doubt-solving for every student. The faculty members are certified and experienced, which really helps in understanding both the basics and advanced concepts easily. The learning environment is friendly, supportive, and motivating — perfect for beginners as well as working professionals. They also guide you properly in choosing the right course based on your background, which I really appreciate. Overall, I can confidently say this is one of the best SolidWorks training centres in Vadodara. Highly recommended!',
         rating: 5,
         highlight: false,
     },
@@ -22,13 +24,52 @@ const reviews = [
     },
     {
         id: 3,
-        name: 'Milan Patel',
-        initials: 'MP',
-        text: 'Teaching provided here is really helpful . The curriculum from easy to hard, helps me to draw difficult parts in Solidworks , which I was hardly think I was able to draw .. If you want to learn Solidworks this is the place. Totally recommended...!!!',
+        name: 'Saiyad SaeedAdib',
+        initials: 'SA',
+        text: 'I am fully satisfied with the facilities and the way classes are conducted. The class timings are convenient and suitable for everyone. Both faculties are highly experienced and always ready to clear our doubts. Their teaching methods are excellent, and the syllabus is well-structured, covering all tools in detail. I have learned many new things about design, and this experience has completely changed my perspective towards the design field. I am truly thankful to all the teachers for their constant support and guidance.',
         rating: 5,
         highlight: false,
     },
 ];
+
+const ReviewCard = ({ review }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const CHAR_LIMIT = 150;
+    const shouldTruncate = review.text.length > CHAR_LIMIT;
+
+    const displayedText = isExpanded || !shouldTruncate
+        ? review.text
+        : `${review.text.substring(0, CHAR_LIMIT)}...`;
+
+    return (
+        <div
+            className={`${styles.card} ${review.highlight ? styles.cardHighlight : styles.cardDefault}`}
+        >
+            <div className={styles.quoteIcon}>
+                <Quote size={48} fill="currentColor" stroke="none" />
+            </div>
+            <p className={styles.reviewText}>
+                {displayedText}
+                {shouldTruncate && (
+                    <span
+                        className={styles.readMore}
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        style={{ marginLeft: '5px', display: 'inline-block' }}
+                    >
+                        {isExpanded ? 'Read Less' : 'Read More'}
+                    </span>
+                )}
+            </p>
+
+            <div className={styles.author}>
+                <div className={`${styles.avatar} ${review.highlight ? styles.avatarHighlight : styles.avatarDefault}`}>
+                    {review.initials}
+                </div>
+                <span className={styles.authorName}>{review.name}</span>
+            </div>
+        </div>
+    );
+};
 
 export default function Testimonials({ className }) {
     return (
@@ -47,26 +88,7 @@ export default function Testimonials({ className }) {
                 <div className={styles.gridContainer}>
                     <div className={styles.grid}>
                         {reviews.map((review) => (
-                            <div
-                                key={review.id}
-                                className={`${styles.card} ${review.highlight ? styles.cardHighlight : styles.cardDefault}`}
-                            >
-                                <div className={styles.quoteIcon}>
-                                    <Quote size={48} fill="currentColor" stroke="none" />
-                                </div>
-                                <p className={styles.reviewText}>{review.text}</p>
-
-                                <div className={styles.author}>
-                                    <div className={`${styles.avatar} ${review.highlight ? styles.avatarHighlight : styles.avatarDefault}`}>
-                                        {review.initials}
-                                    </div>
-                                    <span className={styles.authorName}>{review.name}</span>
-                                </div>
-
-                                {/* <div className={styles.readMore}>
-                                    Read Full Review →
-                                </div> */}
-                            </div>
+                            <ReviewCard key={review.id} review={review} />
                         ))}
                     </div>
 

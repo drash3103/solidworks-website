@@ -69,14 +69,27 @@
 .brandTextContainer {
   display: flex;
   flex-direction: column;
-  /* Stack on mobile if needed, or row? User didn't specify, but usually side-by-side. Let's keep it consistent. Actually, "Bhavya" and "Future EduTech" suggests a single line or maybe stacked. Given "Future EduTech" is bigger, maybe they want it emphasized. Let's try inline-flex or just flex row. Existing was single line. Let's keep it single line but styled differently unless space is tight. */
+  justify-content: center;
+  gap: 2px;
+}
+
+.brandNameRow {
+  display: flex;
   flex-direction: row;
   align-items: baseline;
   gap: 6px;
 }
 
+.tagline {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6B21A8;
+  font-style: italic;
+  line-height: 1.2;
+}
+
 .brandNameBhavya {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   font-style: italic;
   color: #6B21A8;
@@ -85,7 +98,7 @@
 }
 
 .brandNameFuture {
-  font-size: 24px;
+  font-size: 28px;
   /* Bigger size */
   font-weight: 700;
   font-style: italic;

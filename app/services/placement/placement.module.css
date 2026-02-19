@@ -7,7 +7,8 @@
 /* Hero Section */
 .hero {
     position: relative;
-    height: 420px;
+    min-height: 420px;
+    height: auto;
     /* Increased height to match image proportion */
     background-image: url('/placement_hero_v2.png');
     background-size: cover;
@@ -49,7 +50,7 @@
 
 /* Stats Bar */
 .statsContainer {
-    margin-top: -100px;
+    margin-top: -30px;
     /* More overlap as seen in design */
     margin-bottom: 2rem;
     padding: 0 3rem;
@@ -383,7 +384,7 @@
     }
 
     .statsContainer {
-        margin-top: -60px;
+        margin-top: -30px;
     }
 
     .statsBar {

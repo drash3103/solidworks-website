@@ -5,7 +5,7 @@ import styles from './page.module.css';
 
 export const metadata = generateSEOMetadata({
     title: 'Testimonials',
-    description: 'Hear from our students about their journey with SolidWorks Institute.',
+    description: 'Hear from our students about their journey with SOLIDWORKS Institute.',
     canonical: '/testimonials',
 });
 
@@ -31,13 +31,13 @@ const testimonials = [
         color: '#FFA678' // #FFEDD5
     },
     {
-        name: 'Chirag Parmar',
-        text: 'I had a great learning experience here. The course content is very well-structured and covers everything from basics to advanced level. The faculty is highly knowledgeable, supportive and always ready to clear doubts. The learning atmosphere is positive and motivating. Post-training support and job assistance are excellent... they really guide you towards the right career opportunities. Overall, one of the best places to upskill in mechanical design software.',
+        name: 'Harsh Gandhi',
+        text: 'I’m currently a student at the Authorised SolidWorks Training Centre, and my learning experience here has been excellent. The teaching quality is top-notch — the instructors explain each concept clearly, with practical examples that make it easy to understand complex design topics. What I appreciate most is the one-to-one interactive approach; every student gets personal attention and guidance throughout the course. The trainers are very supportive and ensure that we get hands-on practice on real design problems.The environment is professional yet friendly, making it a great place to learn and grow. I would highly recommend this training centre to anyone who wants to build strong skills in SolidWorks and mechanical design.',
         color: '#CFA3F3' // #E9D5FF tint
     },
     {
         name: 'Yaksh Patel',
-        text: 'Excellent SolidWorks learning experience! The course curriculum is well structured, covering everything from fundamentals to advanced level concepts. The faculty is highly knowledgeable, supportive, and always willing to clarify doubts. The overall learning environment is positive, professional, and motivating. I would highly recommend this institute to anyone looking to upskill in mechanical design software.',
+        text: 'Excellent SOLIDWORKS learning experience! The course curriculum is well structured, covering everything from fundamentals to advanced level concepts. The faculty is highly knowledgeable, supportive, and always willing to clarify doubts. The overall learning environment is positive, professional, and motivating. I would highly recommend this institute to anyone looking to upskill in mechanical design software.',
         color: '#C59D5F' // #E7E5E4 / darker tint
     }
 ];
@@ -58,7 +58,7 @@ export default function TestimonialsPage() {
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
                 <div className={styles.heroContent}>
-                    <h1 className={styles.heroTitle}>Voice of The Customers</h1>
+                    <h1 className={styles.heroTitle}>Voice of our Customers</h1>
                     <div className={styles.ratingBadge}>
                         <div className={styles.ratingScore}>4.9</div>
                         <div className={styles.ratingText}>
