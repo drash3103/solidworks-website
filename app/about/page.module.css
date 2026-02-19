@@ -8,7 +8,7 @@
 .hero {
   position: relative;
   height: 420px;
-  background-image: url('/hero/home_hero2.png');
+  background-image: url('/about_hero_v2.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -260,7 +260,8 @@
   position: absolute;
   bottom: 30px;
   right: 30px;
-  width: 120px;
+  width: 200px;
+  /* Updated size */
   height: auto;
   z-index: 20;
   border-radius: 8px;
@@ -276,6 +277,14 @@
 
   .heroTitle {
     font-size: 2.5rem;
+  }
+
+  .heroAuthLogo {
+    width: 140px;
+    /* Mobile size */
+    bottom: 60px;
+    /* Adjust if needed to match Hero */
+    right: 20px;
   }
 
   .splitGrid,

@@ -120,24 +120,18 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Navigation Controls */}
-            <button className={styles.navBtnPrev} onClick={prevSlide} aria-label="Previous slide">
-                <ChevronLeft size={40} />
-            </button>
-            <button className={styles.navBtnNext} onClick={nextSlide} aria-label="Next slide">
-                <ChevronRight size={40} />
-            </button>
-
-            {/* Slide Indicators (Dots) */}
-            <div className={styles.indicators}>
-                {images.map((_, index) => (
-                    <button
-                        key={index}
-                        className={`${styles.dot} ${index === currentImage ? styles.dotActive : ''}`}
-                        onClick={() => setCurrentImage(index)}
-                        aria-label={`Go to slide ${index + 1}`}
-                    />
-                ))}
+            {/* Carousel Controls (Dots Only) */}
+            <div className={styles.carouselControls}>
+                <div className={styles.indicators}>
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            className={`${styles.dot} ${index === currentImage ? styles.dotActive : ''}`}
+                            onClick={() => setCurrentImage(index)}
+                            aria-label={`Go to slide ${index + 1}`}
+                        />
+                    ))}
+                </div>
             </div>
 
             {/* Stats Bar */}

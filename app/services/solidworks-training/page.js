@@ -123,7 +123,7 @@ export default function SolidWorksTrainingPage() {
       {/* Certifications Section */}
       <section className={styles.certifications}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>International Badges</h2>
+          <h2 className={styles.sectionTitle}>SOLIDWORKS International Certifications</h2>
           <div className={styles.certGrid}>
             {certifications.map((cert) => (
               <div key={cert.id} className={styles.certItem}>

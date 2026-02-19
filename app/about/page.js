@@ -48,7 +48,7 @@ export default function AboutPage() {
       <section className={`${styles.introSection} ${styles.creamBg}`}>
         <div className="container">
           <h2 className={styles.sectionTitle}>
-            Shaping the Future <span className={styles.highlightText}>of Design Engineering</span>
+            Bhavya Future EduTech is Shaping the Future <span className={styles.highlightText}>of Design Engineering and one stop solutions for all type of CAD Services</span>
           </h2>
           <div className={styles.introContent}>
             <p>
@@ -147,7 +147,12 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <CallToAction />
+      <CallToAction
+        title="Ready to Discover SOLIDWORKS Services?"
+        subtitle={null}
+        buttonText="Services"
+        buttonLink="/services"
+      />
 
     </div>
   );

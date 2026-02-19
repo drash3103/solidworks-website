@@ -66,16 +66,38 @@
   text-decoration: none;
 }
 
-.brandName {
+.brandTextContainer {
+  display: flex;
+  flex-direction: column;
+  /* Stack on mobile if needed, or row? User didn't specify, but usually side-by-side. Let's keep it consistent. Actually, "Bhavya" and "Future EduTech" suggests a single line or maybe stacked. Given "Future EduTech" is bigger, maybe they want it emphasized. Let's try inline-flex or just flex row. Existing was single line. Let's keep it single line but styled differently unless space is tight. */
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.brandNameBhavya {
   font-size: 20px;
   font-weight: 700;
+  font-style: italic;
   color: #6B21A8;
+  /* Purple */
+  white-space: nowrap;
+}
+
+.brandNameFuture {
+  font-size: 24px;
+  /* Bigger size */
+  font-weight: 700;
+  font-style: italic;
+  color: #EA580C;
+  /* Orange */
   white-space: nowrap;
 }
 
 /* Logo */
 .logo img {
-  height: 70px;
+  height: 90px;
+  /* Increased size */
   width: auto;
 }
 

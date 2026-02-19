@@ -6,7 +6,7 @@
 .hero {
   position: relative;
   height: 420px;
-  background-image: url('/services_hero.jpeg');
+  background-image: url('/design_services_hero_v2.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -310,7 +310,8 @@
   position: absolute;
   bottom: 30px;
   right: 30px;
-  width: 120px;
+  width: 200px;
+  /* Updated size */
   height: auto;
   z-index: 20;
   border-radius: 8px;
@@ -353,5 +354,12 @@
 
   .featuredItem:first-child {
     grid-column: span 1;
+  }
+
+  .heroAuthLogo {
+    width: 140px;
+    /* Mobile size */
+    bottom: 60px;
+    right: 20px;
   }
 }

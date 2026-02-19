@@ -58,11 +58,11 @@ export default function TestimonialsPage() {
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
                 <div className={styles.heroContent}>
-                    <h1 className={styles.heroTitle}>Voices of Our Students</h1>
+                    <h1 className={styles.heroTitle}>Voices of Our Customers</h1>
                     <div className={styles.ratingBadge}>
                         <div className={styles.ratingScore}>4.9</div>
                         <div className={styles.ratingText}>
-                            <div className={styles.studentLabel}>Student Rating</div>
+                            <div className={styles.studentLabel}>Customer Rating</div>
                             <div className={styles.stars}>
                                 {[...Array(5)].map((_, i) => (
                                     <Star key={i} size={12} fill="white" stroke="none" />
@@ -111,11 +111,9 @@ export default function TestimonialsPage() {
             {/* CTA Section */}
             <CallToAction
                 title={CTATitle}
-                subtitle="Join thousands of successful alumni working in top engineering firms worldwide."
-                buttonText="Start Now"
+                subtitle={null}
+                buttonText="Services"
                 buttonLink="/services"
-                secondaryButtonText="View All Courses"
-                secondaryButtonLink="/services"
             />
 
         </div>

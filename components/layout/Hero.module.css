@@ -149,50 +149,24 @@
 }
 
 /* Navigation Controls */
-.navBtnPrev,
-.navBtnNext {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    z-index: 15;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.navBtnPrev {
-    left: 3rem;
-}
-
-.navBtnNext {
-    right: 3rem;
-}
-
-.navBtnPrev:hover,
-.navBtnNext:hover {
-    background: rgba(255, 255, 255, 0.3);
-    scale: 1.1;
-    border-color: white;
-}
-
-.indicators {
+/* Navigation Controls Container */
+.carouselControls {
     position: absolute;
     bottom: 120px;
-    /* Positioned above the stats bar */
+    /* Aligned above stats bar */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     z-index: 15;
+}
+
+.indicators {
+    /* Removed absolute positioning */
+    display: flex;
+    gap: 1rem;
 }
 
 .dot {
@@ -260,21 +234,15 @@
         font-size: 2.2rem;
     }
 
-    .navBtnPrev {
-        left: 1rem;
+    .heading {
+        font-size: 2.2rem;
     }
 
-    .navBtnNext {
-        right: 1rem;
-    }
+    /* Removed absolute positioning overrides for nav buttons */
 }
 
 @media (max-width: 992px) {
-
-    .navBtnPrev,
-    .navBtnNext {
-        display: none;
-    }
+    /* Kept empty or used for other adjustments, removed display:none for nav buttons */
 }
 
 @media (max-width: 768px) {
@@ -363,15 +331,17 @@
         font-size: 1rem;
     }
 
-    /* Reposition Dots */
-    .indicators {
+    /* Position Controls at bottom */
+    .carouselControls {
         bottom: 20px;
-        z-index: 15;
+        width: 100%;
+        justify-content: center;
     }
 
     /* Logo above dots */
     .heroAuthLogo {
-        width: 80px !important;
+        width: 140px !important;
+        /* Increased size */
         bottom: 60px !important;
         right: 20px !important;
         top: auto !important;
@@ -389,9 +359,11 @@
 
 .heroAuthLogo {
     position: absolute;
-    bottom: 30px;
+    bottom: 110px;
+    /* Moved up to avoid overlap with stats bar */
     right: 30px;
-    width: 120px;
+    width: 200px;
+    /* Increased size */
     height: auto;
     z-index: 20;
     border-radius: 8px;

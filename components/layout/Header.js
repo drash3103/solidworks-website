@@ -57,12 +57,10 @@ export default function Header() {
           <a href="https://www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin size={18} />
           </a>
-          <a href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=61583191423828#" aria-label="Facebook">
             <Facebook size={18} />
           </a>
-          <a href="#" aria-label="X">
-            <X size={18} />
-          </a>
+
         </div>
       </div>
 
@@ -79,7 +77,10 @@ export default function Header() {
                 alt="Bhavya Future EduTech"
               />
             </div>
-            <span className={styles.brandName}>Bhavya Future EduTech</span>
+            <div className={styles.brandTextContainer}>
+              <span className={styles.brandNameBhavya}>Bhavya</span>
+              <span className={styles.brandNameFuture}>Future EduTech</span>
+            </div>
           </Link>
 
           {/* Hamburger Menu Icon */}

@@ -6,9 +6,9 @@ import Button from './Button';
 const reviews = [
     {
         id: 1,
-        name: 'Mayur Gamit',
-        initials: 'MG',
-        text: 'I recently completed my SOLIDWORKS certification/training at this Authorized Training Center, and I am satisfied with the experience. They are providing licensed software, good faculty and good infrastructure...',
+        name: 'Mihir Patel',
+        initials: 'MP',
+        text: 'I am very satisfied with the facilities and the overall teaching approach. The class timings are convenient and suitable for everyone. Faculty members are highly experienced, approachable, and always willing to resolve doubts. Their teaching methodology is excellent, and the syllabus is well-structured. I learned many new concepts related to designing, which completely changed my perspective on the design field. I am truly grateful to all the teachers for their constant support and guidance.',
         rating: 5,
         highlight: false,
     },

@@ -15,7 +15,10 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/logo.jpeg" alt="Bhavya Future EduTech" className={styles.logo} />
               <div>
-                <h3 className={styles.brandName}>Bhavya Future EduTech</h3>
+                <div className={styles.brandTextContainer}>
+                  <span className={styles.brandNameBhavya}>Bhavya</span>
+                  <span className={styles.brandNameFuture}>Future EduTech</span>
+                </div>
                 <p className={styles.tagline}>Learn Design, Lead the World</p>
               </div>
             </div>
@@ -32,7 +35,7 @@ export default function Footer() {
                 <Link href="/services">Services</Link>
               </li>
               <li>
-                <Link href="/clients">Clients</Link>
+                <Link href="/gallery">Gallery</Link>
               </li>
               <li>
                 <Link href="/testimonials">Testimonials</Link>
@@ -90,8 +93,8 @@ export default function Footer() {
             <a href="https://www.instagram.com/solidworks_authorised_center?igsh=eG94d2w5M2tjemQ2" aria-label="Instagram"><Instagram size={24} /></a>
             <a href="https://wa.me/+918320977346 " aria-label="WhatsApp"><Phone size={24} /></a> {/* Using Phone as generic replacement if MessageCircle not available, but Lucide has MessageCircle/Phone */}
             <a href="mailto:solidworks.trainingcentre@gmail.com" aria-label="Email"><Mail size={24} /></a>
-            <a href="www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara" aria-label="LinkedIn"><Linkedin size={24} /></a>
-            <a href="#" aria-label="Facebook"><Facebook size={24} /></a>
+            <a href="http://www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara" aria-label="LinkedIn"><Linkedin size={24} /></a>
+            <a href="https://www.facebook.com/profile.php?id=61583191423828#" aria-label="Facebook"><Facebook size={24} /></a>
           </div>
 
           <p className={styles.credits}>

@@ -92,7 +92,8 @@ export default function PlacementPage() {
             {/* Card 1 - Orange */}
             <div className={`${styles.applyCard} ${styles.cardOne}`}>
               <div className={styles.cardIconWrapper}>
-                <GraduationCap size={32} color="#EA580C" className={styles.cardIcon} />
+                {/* <GraduationCap size={32} color="#EA580C" className={styles.cardIcon} /> */}
+                <img src="/icons/student.png" alt="Engineering Students" className={styles.customIcon} />
               </div>
               <h3 className={styles.cardTitle}>Engineering Students</h3>
               <p className={styles.cardSub}>Degree / Diploma / ITI</p>
@@ -101,7 +102,8 @@ export default function PlacementPage() {
             {/* Card 2 - Yellow */}
             <div className={`${styles.applyCard} ${styles.cardTwo}`}>
               <div className={styles.cardIconWrapper}>
-                <Briefcase size={32} color="#F59E0B" className={styles.cardIcon} />
+                {/* <Briefcase size={32} color="#F59E0B" className={styles.cardIcon} /> */}
+                <img src="/icons/professional.png" alt="Working Professionals" className={styles.customIcon} />
               </div>
               <h3 className={styles.cardTitle}>Working Professionals</h3>
             </div>
@@ -109,7 +111,8 @@ export default function PlacementPage() {
             {/* Card 3 - Purple */}
             <div className={`${styles.applyCard} ${styles.cardThree}`}>
               <div className={styles.cardIconWrapper}>
-                <CheckCircle size={32} color="#6B21A8" className={styles.cardIcon} />
+                {/* <CheckCircle size={32} color="#6B21A8" className={styles.cardIcon} /> */}
+                <img src="/icons/graduate.png" alt="Engineering Graduates" className={styles.customIcon} />
               </div>
               <h3 className={styles.cardTitle}>Engineering Graduates</h3>
             </div>
@@ -130,11 +133,9 @@ export default function PlacementPage() {
       {/* CTA Section */}
       <CallToAction
         title="Ready to Start Your Dream Job?"
-        subtitle="Join the ranks of successful alumni. Register for our upcoming batch and get full placement assistance."
-        buttonText="Register Now"
-        buttonLink="/#contact"
-        secondaryButtonText="Contact Counselors"
-        secondaryButtonLink="/#contact"
+        subtitle={null}
+        buttonText="Contact Us"
+        buttonLink="/contact"
       />
 
     </div>

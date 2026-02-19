@@ -40,7 +40,7 @@ export default function HomePage() {
             </div>
             <div className={styles.aboutContent}>
               <h3 className={styles.mainHeading}>
-                <span>Shaping the Future</span> <span className={styles.orangeTextHeading}>of Design Engineering</span>
+                <span>Bhavya Future EduTech is Shaping the Future</span> <span className={styles.orangeTextHeading}>of Design Engineering and one stop solutions for all type of CAD Services</span>
               </h3>
               <p className={styles.italicDesc}>
                 We are a recognized training organization dedicated to providing comprehensive education and professional
@@ -132,11 +132,11 @@ export default function HomePage() {
         <div className="container">
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaHeading}>
-              Ready to Accelerate Your <span>Engineering Career?</span>
+              Ready to Accelerate Your <span>Design Engineering Career?</span>
             </h2>
             <p className={styles.ctaParagraph}>Join the ranks of certified professionals.</p>
             <div className={styles.ctaButtons}>
-              <Link href="/courses" className={styles.ctaButton}>
+              <Link href="/services/solidworks-training" className={styles.ctaButton}>
                 View All Courses
               </Link>
             </div>

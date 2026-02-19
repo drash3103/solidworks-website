@@ -1,0 +1,132 @@
+public/contact_hero_v2.png
+public/design_services_hero_v2.png
+public/mission.png
+public/3d_printer.jpeg
+public/wcu_designs/wcu_6.svg
+public/wcu_designs/wcu_5.svg
+public/wcu_designs/wcu_4.svg
+public/wcu_designs/wcu_1.svg
+public/wcu_designs/wcu_3.svg
+public/wcu_designs/wcu_2.svg
+public/vision.png
+public/gallery.jpg
+public/about_hero_v2.png
+public/images/logo.jpeg
+public/training_hero_v2.png
+public/solidworks-autho-centre.jpg
+public/placement_hero_v2.png
+public/about_us.jpeg
+public/contact_hero_building.png
+public/services_hero.jpeg
+public/center_pics/G1p27.jpeg
+public/center_pics/photo1.jpeg
+public/center_pics/G2p6.jpeg
+public/center_pics/G1p8.jpeg
+public/center_pics/photo6.jpeg
+public/center_pics/G3p11.jpeg
+public/center_pics/G1p9.jpeg
+public/center_pics/photo4.jpeg
+public/center_pics/G3p12.jpeg
+public/center_pics/G1p7.jpeg
+public/center_pics/photo5.jpeg
+public/center_pics/G4p3.jpeg
+public/center_pics/G1pp4.jpeg
+public/center_pics/G3p14.jpeg
+public/center_pics/photo2.jpeg
+public/center_pics/photo3.jpeg
+public/center_pics/G3p15.jpeg
+public/courses/cswp-flow.png
+public/courses/cswa.png
+public/courses/cswp-s.png
+public/courses/cswp-su.png
+public/courses/cswp.png
+public/courses/cswe.png
+public/courses/cswp-cam.png
+public/courses/cswp-mm.png
+public/courses/cswp-wd.png
+public/courses/cswa-s.png
+public/courses/3d-printing.png
+public/courses/cswp-dt.png
+public/courses/cswe-s.png
+public/courses/cswp-sm.png
+public/design_choose_us/1.svg
+public/design_choose_us/3.svg
+public/design_choose_us/2.svg
+public/design_choose_us/6.svg
+public/design_choose_us/5.svg
+public/design_choose_us/4.svg
+public/testimonials_hero_v2.png
+public/icons/partnership.png
+public/icons/online-counseling.png
+public/icons/laptop-man.png
+public/icons/business-training.png
+public/contact_hero.png
+public/services_hero_v2.png
+public/logo.jpeg
+public/hero/plac1.jpeg
+public/hero/3d1.jpeg
+public/hero/int2.jpeg
+public/hero/trai1.jpeg
+public/hero/home_hero3.png
+public/hero/home_hero2.png
+public/hero/3d2.jpeg
+public/hero/trai2.png
+public/hero/int1.jpeg
+public/hero/plac2.jpeg
+public/Company Logo/GBT Composites Technology Ltd..jpg
+public/Company Logo/L & T.png
+public/Company Logo/Flamertech.png
+public/Company Logo/Orbit.jpg
+public/Company Logo/Idex.jpg
+public/Company Logo/Flexatherm.png
+public/Company Logo/moflex suspensions llp.png
+public/Company Logo/TATA_Consultancy_Services.png
+public/Company Logo/DSS Automation.png
+public/Company Logo/A P CLUTCHES PVT LTD.png
+public/Company Logo/PAkona.png
+public/Company Logo/Xylem.png
+public/Company Logo/parth Kitchen.png
+public/Company Logo/Ultimate Switchgear.jpg
+public/Company Logo/UnipackTransLogo.png
+public/Company Logo/schurter-logo-approved.png
+public/Company Logo/Narkhede.png
+public/Company Logo/ET.png
+public/Company Logo/Rotex.jpg
+public/Company Logo/RSIS.jpg
+public/Company Logo/Emphetech.jpg
+public/Company Logo/BAroda hi tech.jpg
+public/Company Logo/Expel Prosys.jpg
+public/Company Logo/SDEC.png
+public/Company Logo/Popukar Switchgear.jpg
+public/Company Logo/Growell.png
+public/Company Logo/Vexma Technologies.png
+public/3d_printer_designs/image 17.png
+public/3d_printer_designs/image 14.png
+public/3d_printer_designs/image 15.png
+public/3d_printer_designs/image 18.png
+public/badges/certi9.png
+public/badges/certi8.png
+public/badges/certi12.png
+public/badges/certi13.png
+public/badges/certi11.png
+public/badges/certi10.png
+public/badges/5E3792B7-D0FA-455C-98D7-EA3DC77DF9F6.png
+public/badges/certi1.png
+public/badges/certi3.png
+public/badges/certi2.png
+public/badges/certi6.png
+public/badges/certi7.png
+public/badges/certi5.png
+public/badges/certi4.png
+public/Dservices/design4.jpeg
+public/Dservices/design5.jpeg
+public/Dservices/design2.jpeg
+public/Dservices/design3.jpeg
+public/Dservices/design1.jpeg
+public/services/training.jpeg
+public/services/placements.png
+public/services/design_services.jpeg
+public/services/design_consultancy.jpeg
+public/services/design_consultancy_v2.jpeg
+public/services/training_clean.jpeg
+public/services/3d.jpeg

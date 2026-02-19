@@ -202,7 +202,8 @@
     position: absolute;
     bottom: 30px;
     right: 30px;
-    width: 120px;
+    width: 200px;
+    /* Updated size */
     height: auto;
     z-index: 20;
     border-radius: 8px;
@@ -236,5 +237,12 @@
 
     .socialIcons {
         justify-content: flex-start;
+    }
+
+    .heroAuthLogo {
+        width: 140px;
+        /* Mobile size */
+        bottom: 60px;
+        right: 20px;
     }
 }

@@ -82,10 +82,10 @@ const reasons = [
 ];
 
 const workSteps = [
-  { id: 1, title: 'Consultation', desc: 'Understanding your design requirements and project scope.', icon: Search },
-  { id: 2, title: 'CAD Design', desc: 'Developing precise 2D/3D CAD models and assemblies.', icon: Box },
-  { id: 3, title: 'Printing', desc: 'Prototype development using advanced 3D printing tech.', icon: Printer },
-  { id: 4, title: 'Delivery', desc: 'Final project delivery and post-production support.', icon: Truck },
+  { id: 1, title: 'Concept Discussion', desc: 'Understanding your design requirements and project scope.', icon: Search },
+  { id: 2, title: 'Detailed Engineering:2D Drafting/Sketch Preparation', desc: 'Developing precise 2D/3D CAD models and assemblies.', icon: Box },
+  { id: 3, title: '3D Design ', desc: 'Prototype development using advanced 3D printing tech.', icon: Printer },
+  { id: 4, title: 'Solution Delivery', desc: 'Final project delivery and post-production support.', icon: Truck },
 ];
 
 export default function DesignServicesManpowerPage() {
@@ -135,7 +135,7 @@ export default function DesignServicesManpowerPage() {
               </p>
             </div>
             <div className={styles.introImage}>
-              <img src="/3d_printer.jpeg" alt="3D Printer" />
+              <img src="/services/design_consultancy_v2.jpeg" alt="Engineering Design Consultancy" />
             </div>
           </div>
         </div>
@@ -158,18 +158,7 @@ export default function DesignServicesManpowerPage() {
         </div>
       </section>
 
-      {/* Featured Designs Section */}
-      <section className={styles.featuredDesigns}>
-        <div className="container">
-          <h2 className={styles.sectionTitle}>Featured Designs</h2>
-          <div className={styles.featuredGrid}>
-            <div className={`${styles.featuredItem} ${styles.narrow}`}><img src="/3d_printer_designs/image 15.png" alt="Featured Design 1" /></div>
-            <div className={`${styles.featuredItem} ${styles.wide}`}><img src="/3d_printer_designs/image 14.png" alt="Featured Design 2" /></div>
-            <div className={`${styles.featuredItem} ${styles.wide}`}><img src="/3d_printer_designs/image 17.png" alt="Featured Design 3" /></div>
-            <div className={`${styles.featuredItem} ${styles.narrow}`}><img src="/3d_printer_designs/image 18.png" alt="Featured Design 4" /></div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Why Choose Us Section */}
       <section className={styles.whyChooseUs}>
@@ -242,14 +231,25 @@ export default function DesignServicesManpowerPage() {
         </div>
       </section>
 
+      {/* Featured Designs Section */}
+      <section className={styles.featuredDesigns}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Featured Designs</h2>
+          <div className={styles.featuredGrid}>
+            <div className={`${styles.featuredItem} ${styles.narrow}`}><img src="/3d_printer_designs/image 15.png" alt="Featured Design 1" /></div>
+            <div className={`${styles.featuredItem} ${styles.wide}`}><img src="/3d_printer_designs/image 14.png" alt="Featured Design 2" /></div>
+            <div className={`${styles.featuredItem} ${styles.wide}`}><img src="/3d_printer_designs/image 17.png" alt="Featured Design 3" /></div>
+            <div className={`${styles.featuredItem} ${styles.narrow}`}><img src="/3d_printer_designs/image 18.png" alt="Featured Design 4" /></div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <CallToAction
-        title="Ready to Accelerate Your Engineering Career?"
-        subtitle="Join millions of students and professionals and create your own world with us."
-        buttonText="Send Now"
-        buttonLink="#contact"
-        secondaryButtonText="View All Courses"
-        secondaryButtonLink="/services"
+        title="Ready to Accelerate your Design Work?"
+        subtitle={null}
+        buttonText="Contact Us"
+        buttonLink="/contact"
       />
     </div>
   );
