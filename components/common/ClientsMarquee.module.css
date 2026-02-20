@@ -69,3 +69,10 @@
 .marqueeTrack:hover {
     animation-play-state: paused;
 }
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}

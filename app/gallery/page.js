@@ -76,11 +76,8 @@ export default function GalleryPage() {
                     {Object.values(galleryData).flatMap(data =>
                         data.files.map(file => ({ ...data, file }))
                     ).map(({ dirName, file }, index) => (
-                        <a
+                        <div
                             key={index}
-                            href={`/gallery_Img/${dirName}/${file}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
                             className={styles.card}
                         >
                             <div className={styles.cardContent}>
@@ -92,7 +89,7 @@ export default function GalleryPage() {
                                     className={styles.pdfPreview}
                                 />
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
 

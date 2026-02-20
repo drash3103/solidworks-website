@@ -18,7 +18,7 @@ const reviews = [
         id: 2,
         name: 'Chirag Parmar',
         initials: 'CP',
-        text: 'I had a great learning experience here. The course content is very well-structured and covers everything from basics to advanced level. The faculty is highly knowledgeable, supportive and always ready to clear doubts.',
+        text: 'I had a great learning experience here. The course content is very well-structured and covers everything from basics to advanced level. The faculty is highly knowledgeable, supportive and always ready to clear doubts. The learning atmosphere is positive and motivating. Post-training support and job assistance are excellent – they really guide you towards the right career opportunities. Overall, one of the best places to upskill in mechanical design software',
         rating: 5,
         highlight: true,
     },

@@ -283,11 +283,12 @@
 
   .navMenu {
     position: fixed;
-    top: 74px;
+    top: 100%;
+    bottom: 0;
+    height: auto;
     /* Adjust based on header height */
     left: -100%;
     width: 100%;
-    height: calc(100vh - 74px);
     background-color: white;
     flex-direction: column;
     align-items: center;

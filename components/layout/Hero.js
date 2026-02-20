@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import styles from './Hero.module.css';
 
 const images = [
@@ -22,22 +23,22 @@ const contentSets = [
     {
         heading: <>Upgrade your CAD Skills with <br /><span className={styles.orangeText}>Authorized SOLIDWORKS Training Partner</span></>,
         tagline: "Practical SOLIDWORKS Training for CAD, CAE, CAM, Simulation, and 3D Printing.",
-        description: "Corporate-Focused SOLIDWORKS Training Aligned with Organizations Needs. Internships, Projects, and Placements for Job-Ready DESIGN Engineers."
+        description: <>Corporate-Focused SOLIDWORKS Training Aligned with Organizations Needs.<br />Internships, Projects, and Placements for Job-Ready DESIGN Engineers.</>
     },
     {
         heading: <><span className={styles.orangeText}>Placement</span> Assistance</>,
         tagline: "Launch Your Career with Industry Leaders",
-        description: "Connecting our students with 1000+ top companies through dedicated career support and mentorship. Bridging the Gap Between Engineering Education and Industry Careers in DESIGN"
+        description: <>Connecting our students with 1000+ top companies through dedicated career support and mentorship.<br />Bridging the Gap Between Engineering Education and Industry Careers in DESIGN</>
     },
     {
         heading: <><span className={styles.orangeText}>Design</span> Services and Manpower Solutions</>,
         tagline: "Professional CAD/CAM Design Services and Design Engineering Manpower",
-        description: "End-to-End 3D Design, CAD/CAM Services, and Design Engineering Manpower Solutions. From Concept Design to Manufacturing-Ready Drawings—Delivered with Accuracy. On-Demand Engineering Design Services and Manpower for Industrial Excellence."
+        description: <>End-to-End 3D Design, CAD/CAM Services, and Design Engineering Manpower Solutions.<br />From Concept Design to Manufacturing-Ready Drawings—Delivered with Accuracy.<br />On-Demand Engineering Design Services and Manpower for Industrial Excellence.</>
     },
     {
         heading: <><span className={styles.orangeText}>Advanced</span> 3D Printing Training and Job Work Services</>,
         tagline: "Learn 3D Printing the Right Way – Practical, Professional, Production-Focused.",
-        description: "Complete 3D Printing Solutions – Training + Custom Job Work Services. Learn, Design, Manufacture – Complete 3D Printing Ecosystem Under One Roof."
+        description: <>Complete 3D Printing Solutions – Training + Custom Job Work Services.<br />Learn, Design, Manufacture – Complete 3D Printing Ecosystem Under One Roof.</>
     }
 ];
 
@@ -49,6 +50,7 @@ const stats = [
 ];
 
 export default function Hero() {
+    const router = useRouter();
     const [currentImage, setCurrentImage] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
 
@@ -111,9 +113,13 @@ export default function Hero() {
                         </div>
 
                         <div className={styles.buttonGroup}>
-                            <button className={styles.primaryBtn}>SOLIDWORKS Training</button>
-                            <button className={styles.secondaryBtn}>Placements</button>
-                            <button className={styles.secondaryBtn}>
+                            <button className={styles.primaryBtn} onClick={() => router.push('/services/solidworks-training')}>
+                                SOLIDWORKS Training
+                            </button>
+                            <button className={styles.secondaryBtn} onClick={() => router.push('/services/placement')}>
+                                Placements
+                            </button>
+                            <button className={styles.secondaryBtn} onClick={() => router.push('/services/design-services-manpower')}>
                                 Design Services & Man Power Supply
                             </button>
                         </div>

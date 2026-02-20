@@ -45,3 +45,30 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Global Grid Utilities */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+    /* Force smaller size on mobile */
+  }
+
+  section {
+    padding: 3rem 0 !important;
+    /* standardize section padding */
+  }
+}

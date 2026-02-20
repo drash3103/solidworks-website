@@ -17,7 +17,7 @@ const testimonials = [
     },
     {
         name: 'Swayam Patel',
-        text: 'I had a great experience at the SOLIDWORKS Authorized Training Centre, Sayajigunj (Malkarani Complex). The faculty are certified, highly experienced, and provide excellent one-on-one guidance. With flexible practice hours. After CSWA training, I confidently enrolled for CSWP as well. Best place in Vadodara to learn SOLIDWORKS.',
+        text: 'I had a great experience at the SOLIDWORKS Authorized Training Centre, Sayajigunj (Yashkamal Complex). The faculty are certified, highly experienced, and provide excellent one-on-one guidance. With flexible practice hours. After CSWA training, I confidently enrolled for CSWP as well. Best place in Vadodara to learn SOLIDWORKS.',
         color: '#FFE3CB' // #FFEDD5 tint
     },
     {
@@ -39,7 +39,22 @@ const testimonials = [
         name: 'Yaksh Patel',
         text: 'Excellent SOLIDWORKS learning experience! The course curriculum is well structured, covering everything from fundamentals to advanced level concepts. The faculty is highly knowledgeable, supportive, and always willing to clarify doubts. The overall learning environment is positive, professional, and motivating. I would highly recommend this institute to anyone looking to upskill in mechanical design software.',
         color: '#C59D5F' // #E7E5E4 / darker tint
-    }
+    },
+    {
+        name: 'Khagesh Kabra',
+        text: 'I recently started learning SolidWorks here and honestly the experience is really good. The trainer explains everything in a simple and practical way. Feeling more confident day by day.',
+        color: '#bbe5acff' // #E7E5E4 / darker tint
+    },
+    {
+        name: 'Mayur Gamit',
+        text: 'I recently completed my SOLIDWORKS certification/training at this Authorized Training Center, and I am satisfied with the experience. They are providing licensed software, good faculty and good infrastructure...',
+        color: '#fbac87ff' // #E7E5E4 / darker tint
+    },
+    {
+        name: 'Nilay Kumar',
+        text: 'Really good place to learn. The coaching is very helpful and the trainers explain things in a simple and clear way. They are very knowledgeable and friendly. Each student gets licensed software on their own machine, which is great for practice. The timings are flexible, the content is well structured, and the facilities are also very good. Overall, a nice learning experience and Thanking Vishvam and Pratham sir who were assigned to mentor me',
+        color: '#acdee5ff' // #E7E5E4 / darker tint
+    },
 ];
 
 export default function TestimonialsPage() {
