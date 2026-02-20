@@ -312,8 +312,17 @@
     gap: 2rem;
   }
 
+  .aboutTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mainHeading {
+    font-size: 1.5rem;
+  }
+
   .ctaHeading {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }

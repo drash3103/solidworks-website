@@ -254,7 +254,7 @@
 
     .carouselContainer {
         position: absolute;
-        height: 450px !important;
+        height: 100% !important;
     }
 
     .heroContent {
@@ -262,7 +262,7 @@
         top: 0;
         transform: none;
         padding: 40px 0;
-        min-height: 450px;
+        min-height: auto;
         display: flex;
         align-items: center;
     }

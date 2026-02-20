@@ -277,16 +277,24 @@
     height: 50px;
   }
 
-  .brandName {
-    font-size: 16px;
+  .brandNameBhavya,
+  .brandNameFuture {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .brandTextContainer {
+    max-width: 200px;
   }
 
   .navMenu {
-    position: fixed;
+    position: absolute;
     top: 100%;
-    bottom: 0;
-    height: auto;
-    /* Adjust based on header height */
+    height: calc(100vh - 100%);
     left: -100%;
     width: 100%;
     background-color: white;
@@ -298,6 +306,7 @@
     z-index: 1000;
     gap: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
   }
 
   .navMenu.mobileVisible {
@@ -330,7 +339,7 @@
 }
 
 @media (max-width: 480px) {
-  .brandName {
+  .brandTextContainer {
     display: none;
     /* Hide brand name text on very small screens to keep logo */
   }

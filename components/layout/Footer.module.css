@@ -188,4 +188,16 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .brandTextContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .brandNameBhavya,
+  .brandNameFuture {
+    white-space: normal;
+    font-size: 18px;
+  }
 }
