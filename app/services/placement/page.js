@@ -73,7 +73,7 @@ export default function PlacementPage() {
             Bhavya Future EduTech bridges the gap between education and employment by delivering industry-focused, job-oriented training in the CAD / CAM. Beyond technical skill development, we provide end-to-end career support—including placement guidance, interview preparation, and professional mentorship—to help students build confidence and launch successful careers in engineering, design, and manufacturing.
           </p>
           <p>
-            Bhavya Future EduTech offers exciting internship opportunities for engineering students and professionals, designed to build strong practical and industry-ready skills.
+            We offer exciting internship opportunities for engineering students and professionals, designed to build strong practical and industry-ready skills.
             We actively mentor final-semester engineering students on their academic projects, providing hands-on guidance, real-world engineering exposure, and a clear connection between theoretical concepts and industry applications.
           </p>
           <p>
