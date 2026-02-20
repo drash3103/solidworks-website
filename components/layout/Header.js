@@ -121,7 +121,7 @@ export default function Header() {
               </ul>
             </li>
             <li>
-              <Link href="/gallery" className={isActive("/gallery") ? styles.active : ""} onClick={closeMenu}>Gallery</Link>
+              <Link href="/gallery" className={isActive("/gallery") ? styles.active : ""} onClick={closeMenu}> Design Gallery</Link>
             </li>
             <li>
               <Link href="/testimonials" className={isActive("/testimonials") ? styles.active : ""} onClick={closeMenu}>Testimonials</Link>
