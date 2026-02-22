@@ -38,7 +38,7 @@ const contentSets = [
     {
         heading: <><span className={styles.orangeText}>Advanced</span> 3D Printing Training and Job Work Services</>,
         tagline: "Learn 3D Printing the Right Way – Practical, Professional, Production-Focused",
-        description: <>Complete 3D Printing Solutions – Training + Custom Job Work Services<br />Learn, Design, Manufacture – Complete 3D Printing Ecosystem Under One Roof</>
+        description: <>Complete 3D Printing Solutions – Training and Custom Job Work Services<br />Learn, Design, Manufacture – Complete 3D Printing Ecosystem Under One Roof</>
     }
 ];
 

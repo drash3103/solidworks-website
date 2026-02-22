@@ -212,8 +212,29 @@
     }
 
     .gridContainer {
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
         border-width: 2px;
         border-radius: 24px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 1.25rem 0.5rem;
+        min-height: 140px;
+    }
+
+    .iconWrapper {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 0.75rem;
+    }
+
+    .cardTitle {
+        font-size: 13px;
+        line-height: 1.3;
     }
 }

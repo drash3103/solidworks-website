@@ -43,7 +43,7 @@ export default function HomePage() {
                 <span>Bhavya Future EduTech is Shaping the Future</span> <span className={styles.orangeTextHeading}>of Design Engineering and one stop solutions for all type of CAD Services</span>
               </h3>
               <p className={styles.italicDesc}>
-                We are a recognized training organization dedicated to providing comprehensive education and professional
+                Bhavya Future EduTech is a recognized training organization dedicated to providing comprehensive education and professional
                 services in SOLIDWORKS, a powerful solid modeling CAD (Computer-Aided Design), CAE (Computer-Aided
                 Engineering), and 3D Printing platform widely adopted across the design and manufacturing industries.
               </p>

@@ -131,16 +131,16 @@ export default function Header() {
             </li>
             {/* Mobile-only CTA */}
             <li className={styles.mobileCta}>
-              <a href="https://wa.me/+918320977346" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-                <button className={styles.ctaButton}>Inquire</button>
+              <a href="https://wa.me/+918320977346" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className={styles.ctaButton} style={{ display: 'inline-block', textDecoration: 'none' }}>
+                Inquire
               </a>
             </li>
           </ul>
 
           {/* Desktop CTA */}
           <div className={styles.desktopCta}>
-            <a href="https://wa.me/+918320977346" target="_blank" rel="noopener noreferrer">
-              <button className={styles.ctaButton}>Inquire</button>
+            <a href="https://wa.me/+918320977346" target="_blank" rel="noopener noreferrer" className={styles.ctaButton} style={{ display: 'inline-block', textDecoration: 'none' }}>
+              Inquire
             </a>
           </div>
         </div>

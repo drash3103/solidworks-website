@@ -75,7 +75,7 @@ export default function AboutPage() {
             <div className={styles.textContent}>
               <h2 className={styles.splitTitle}>Our Mission</h2>
               <p>
-                Our mission is to deliver exceptional SOLIDWORKS-based services through cutting-edge training, reliable design solutions, and career-building support. Bhavya Future Edutech is committed to nurturing talent, driving innovation, and bridging the gap between education and industry with integrity, quality, and a passion for engineering excellence.
+                Our mission is to deliver exceptional SOLIDWORKS-based services through cutting-edge training, reliable design solutions, and career-building support. We are committed to nurturing talent, driving innovation, and bridging the gap between education and industry with integrity, quality, and a passion for engineering excellence.
               </p>
             </div>
           </div>

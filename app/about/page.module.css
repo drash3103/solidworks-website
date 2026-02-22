@@ -326,3 +326,24 @@
     padding: 3rem 0;
   }
 }
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
+  }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
+  }
+}

@@ -160,7 +160,7 @@ export default function SolidWorksTrainingPage() {
       <section className={styles.roles}>
         <div className="container">
           <div className={styles.rolesHeader}>
-            <h2 className={styles.rolesTitle}>Roles Bhavya Future Edutech prepares you for</h2>
+            <h2 className={styles.rolesTitle}>Roles We prepare you for</h2>
 
           </div>
           <div className={styles.rolesGrid}>

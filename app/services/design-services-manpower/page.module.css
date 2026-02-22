@@ -275,7 +275,7 @@
 
 .stepsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -289,8 +289,8 @@
 }
 
 .stepCircle {
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: white;
   border: 2px solid #EA580C;
@@ -331,6 +331,11 @@
 }
 
 @media (max-width: 1024px) {
+  .introContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
   .designGrid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -346,7 +351,8 @@
   }
 
   .introContent {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     gap: 2rem;
   }
 
@@ -354,15 +360,39 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .stepsGrid {
+  .reasonsGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
-  .featuredGrid {
+  .reasonCard {
+    padding: 1rem 0.5rem;
+    border-width: 2px;
+    aspect-ratio: auto;
+  }
+
+  .reasonIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .reasonText {
+    font-size: 0.8rem;
+  }
+
+  .stepsGrid {
     grid-template-columns: 1fr;
   }
 
-  .featuredItem:first-child {
+  .featuredGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 1rem;
+  }
+
+  /* Since the layout is now 2 columns, remove the fixed span for the wide/narrow items so they all flow naturally or at least safely */
+  .featuredItem.narrow,
+  .featuredItem.wide {
     grid-column: span 1;
   }
 
@@ -379,5 +409,27 @@
   .whyChooseUs,
   .howWeWork {
     padding: 3rem 0;
+  }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
+  }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
   }
 }

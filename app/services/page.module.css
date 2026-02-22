@@ -260,10 +260,14 @@
 
   .serviceCard,
   .reverseCard {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 2rem;
     gap: 2rem;
     text-align: center;
+  }
+
+  .serviceText {
+    text-align: justify;
   }
 }
 
@@ -281,5 +285,61 @@
     /* Mobile size */
     bottom: 60px;
     right: 20px;
+  }
+
+  .stepsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stepCard {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .stepCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--borderColor);
+    opacity: 0.85;
+    border-radius: 2px;
+    z-index: 0;
+  }
+
+  .stepCard .stepTitle,
+  .stepCard .stepDesc {
+    color: white !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .stepCard .stepNumber {
+    transform: translateX(-50%) scale(1.1) !important;
+    z-index: 2;
+  }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
+  }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
   }
 }

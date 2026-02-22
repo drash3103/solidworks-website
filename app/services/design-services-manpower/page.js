@@ -82,10 +82,9 @@ const reasons = [
 ];
 
 const workSteps = [
-  { id: 1, title: 'Concept Discussion', desc: 'Understanding your design requirements and project scope.', icon: Search },
-  { id: 2, title: 'Detailed Engineering', desc: '2D Drafting/Sketch Preparation', icon: Box },
-  { id: 3, title: '3D Design ', desc: 'Prototype development using advanced 3D printing tech.', icon: Printer },
-  { id: 4, title: 'Solution Delivery', desc: 'Final project delivery and post-production support.', icon: Truck },
+  { id: 1, title: 'Concept Discussion', desc: 'Understanding your design requirements and project scope.', icon: '/icons/concept_discussion.png' },
+  { id: 2, title: 'Detailed Engineering', desc: 'Conceptual Drawing preparation', icon: '/icons/detailed_engineering.png' },
+  { id: 3, title: 'Solution Delivery', desc: '3D/2D design drawing submission', icon: '/icons/solution_delivery.png' },
 ];
 
 export default function DesignServicesManpowerPage() {
@@ -128,7 +127,7 @@ export default function DesignServicesManpowerPage() {
                 Backed by a strong foundation in engineering knowledge and industry best practices, we deliver <span className={styles.highlight}>high-quality, cost-effective, and timely solutions</span> tailored to the unique requirements of each project. Along with design and drafting services, we offer <span className={styles.highlight}>qualified design engineering manpower</span> to support client operations, project execution, and workforce requirements across industries.
               </p>
               <p>
-                Bhavya Future EduTech is committed to working within defined budgets and timelines while maintaining the highest standards of accuracy, quality, and professionalism. Beyond service delivery, we focus on building <span className={styles.highlight}>long-term partnerships</span> based on trust, transparency, and reliability.
+                We are committed to working within defined budgets and timelines while maintaining the highest standards of accuracy, quality, and professionalism. Beyond service delivery, we focus on building <span className={styles.highlight}>long-term partnerships</span> based on trust, transparency, and reliability.
               </p>
               <p>
                 Client satisfaction is at the core of everything we do. Through value-added services, skilled manpower support, and ethical practices, we strive to exceed expectations and establish ourselves as a trusted engineering design and manpower solutions partner.
@@ -218,7 +217,11 @@ export default function DesignServicesManpowerPage() {
               return (
                 <div key={step.id} className={styles.stepItem}>
                   <div className={styles.stepCircle}>
-                    <Icon size={20} />
+                    {typeof Icon === 'string' ? (
+                      <img src={Icon} alt={step.title} style={{ width: 44, height: 44, objectFit: 'contain' }} />
+                    ) : (
+                      <Icon size={32} />
+                    )}
                   </div>
                   <div className={styles.stepContent}>
                     <h3>{step.id}. {step.title}</h3>

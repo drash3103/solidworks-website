@@ -304,31 +304,34 @@
     .statsBar {
         width: 100%;
         max-width: none;
-        flex-direction: column;
-        padding: 50px 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 40px 10px;
         border-radius: 0;
-        gap: 40px;
+        gap: 20px;
+        justify-content: space-around;
         box-shadow: none;
         background: transparent;
     }
 
     .statItem {
-        width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        padding-bottom: 30px;
+        width: 40%;
+        border-bottom: none;
+        padding-bottom: 10px;
     }
 
     .statItem:last-child {
         border-bottom: none;
-        padding-bottom: 0;
+        padding-bottom: 10px;
     }
 
     .statNumber {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .statLabel {
-        font-size: 1rem;
+        font-size: 0.85rem;
+        text-align: center;
     }
 
     /* Position Controls at bottom */
@@ -338,16 +341,7 @@
         justify-content: center;
     }
 
-    /* Logo above dots */
-    .heroAuthLogo {
-        width: 140px !important;
-        /* Increased size */
-        bottom: 60px !important;
-        right: 20px !important;
-        top: auto !important;
-        position: absolute !important;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+    /* Keep this area for any other controls padding */
 }
 
 @media (max-width: 480px) {
@@ -370,4 +364,28 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background: white;
     padding: 5px;
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+    .heroAuthLogo {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        right: auto !important;
+        left: auto !important;
+        margin-left: auto !important;
+        margin-right: 20px !important;
+        margin-bottom: 20px !important;
+        order: 2 !important;
+        width: 90px !important;
+    }
+
+    .heroContent {
+        order: 1 !important;
+    }
+
+    .statsBarWrapper {
+        order: 3 !important;
+    }
 }

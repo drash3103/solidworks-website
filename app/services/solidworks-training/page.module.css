@@ -642,6 +642,11 @@
     gap: 2rem;
   }
 
+  .rolesGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
   .heroText h1 {
     font-size: 2rem;
   }
@@ -694,5 +699,52 @@
 @media (max-width: 640px) {
   .coursesGrid {
     grid-template-columns: 1fr;
+  }
+
+  .rolesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .certGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .certItem:last-child {
+    grid-column: auto;
+  }
+
+  .certBadge {
+    width: 100px;
+    height: 100px;
+  }
+
+  .certTextBox {
+    font-size: 0.8rem;
+    padding: 0.6rem 0.5rem;
+    max-width: 140px;
+  }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
+  }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+  .heroAuthLogo {
+    width: 90px !important;
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    position: absolute !important;
   }
 }

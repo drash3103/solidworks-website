@@ -102,8 +102,7 @@
     flex-grow: 1;
     position: relative;
     overflow: hidden;
-    background: #FFF7ED;
-    /* Very light orange tint */
+    background: white;
 }
 
 
@@ -112,8 +111,10 @@
     width: 100%;
     height: 100%;
     border: none;
-    object-fit: cover;
-    /* Cover the area nicely */
+    object-fit: contain;
+    /* Ensure image is fully visible instead of cropped */
+    background-color: white;
+    /* White background for empty space */
     display: block;
 }
 
@@ -171,11 +172,43 @@
     }
 
     .grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .card {
-        height: 300px;
+        height: 220px;
+    }
+
+    .cardFooter {
+        padding: 0.5rem;
+    }
+
+    .fileName {
+        font-size: 0.75rem;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+    .heroAuthLogo {
+        width: 90px !important;
+        top: auto !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        position: absolute !important;
+    }
+}
+
+/* Global Mobile Hero Logo Override */
+@media (max-width: 1024px) {
+    .heroAuthLogo {
+        width: 90px !important;
+        top: auto !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        position: absolute !important;
     }
 }
