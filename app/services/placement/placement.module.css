@@ -50,8 +50,7 @@
 
 /* Stats Bar */
 .statsContainer {
-    margin-top: -30px;
-    /* More overlap as seen in design */
+    margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 0 3rem;
 }
@@ -399,7 +398,7 @@
     }
 
     .statsContainer {
-        margin-top: -30px;
+        margin-top: 3rem;
         padding: 0 1rem;
     }
 

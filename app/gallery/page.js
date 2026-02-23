@@ -60,9 +60,9 @@ export default function GalleryPage() {
                 <div className={styles.heroOverlay}></div>
                 <div className={styles.heroContent}>
                     <h1 className={styles.heroTitle}>Design Gallery</h1>
-                    <p style={{ fontSize: '1.25rem', marginTop: '1rem', fontFamily: 'var(--font-noto-sans)' }}>
+                    {/* <p style={{ fontSize: '1.25rem', marginTop: '1rem', fontFamily: 'var(--font-noto-sans)' }}>
                         Explore our engineering design portfolio
-                    </p>
+                    </p> */}
                 </div>
                 <img
                     src="/solidworks-autho-centre.jpg"

@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
 
           <p className={styles.credits}>
-            Made by <a href="https://www.ctrlaltbuild.in/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>CtrlAltBuild Technologies</a>
+            Made by <a href="https://www.ctrlaltbuild.in/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'orange' }}>CtrlAltBuild Technologies</a>
           </p>
         </div>
       </div>
