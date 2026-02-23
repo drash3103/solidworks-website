@@ -49,7 +49,6 @@
   /* Centering the heading */
   font-weight: 700;
   margin-bottom: 3.5rem;
-  font-family: var(--font-space-grotesk), sans-serif;
   width: 100%;
 }
 
@@ -59,7 +58,7 @@
   margin-bottom: 1.5rem;
   line-height: 1.2;
   color: #6B21A8;
-  font-family: var(--font-space-grotesk), sans-serif;
+  font-family: Arial;
 }
 
 .orangeTextHeading {
@@ -72,7 +71,7 @@
   line-height: 1.6;
   font-style: italic;
   margin-bottom: 2rem;
-  font-family: var(--font-noto-sans), sans-serif;
+  font-family: Arial;
 }
 
 .numberedList {
@@ -84,7 +83,7 @@
   gap: 0.75rem;
   margin-bottom: 1.25rem;
   /* align-items: flex-start; */
-  font-family: var(--font-noto-sans), sans-serif;
+  font-family: Arial;
   color: #4b5563;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -96,11 +95,13 @@
   font-weight: 700;
   flex-shrink: 0;
   margin-top: 0.1rem;
+
 }
 
 .listItem strong {
   color: #4b5563;
   font-weight: 700;
+  font-family: Arial;
 }
 
 .knowMoreLink {
@@ -114,7 +115,6 @@
   transition: gap 0.2s;
   margin-top: 2.5rem;
   /* Moved further down */
-  font-family: var(--font-noto-sans), sans-serif;
 }
 
 .knowMoreLink:hover {
@@ -140,7 +140,6 @@
 
 .sectionHeader h2 {
   color: #6B21A8;
-  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -148,7 +147,6 @@
 
 .sectionHeader p {
   color: #4b5563;
-  font-family: var(--font-noto-sans), sans-serif;
   font-size: 1.125rem;
 }
 
@@ -217,7 +215,6 @@
 }
 
 .ctaHeading {
-  font-family: var(--font-space-grotesk), sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -236,7 +233,6 @@
 }
 
 .ctaParagraph {
-  font-family: var(--font-noto-sans), sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -261,7 +257,6 @@
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  font-family: var(--font-noto-sans), sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-decoration: none;

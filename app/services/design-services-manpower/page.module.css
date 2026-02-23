@@ -1,5 +1,5 @@
 .pageWrapper {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Arial';
 }
 
 /* Hero Section */
@@ -35,7 +35,6 @@
 }
 
 .heroTitle {
-  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -86,17 +85,7 @@
   position: relative;
 }
 
-.withBar::after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, #6B21A8 0%, #EA580C 100%);
-  border-radius: 999px;
-}
+
 
 /* Design Services Section */
 .designServices {
@@ -343,6 +332,13 @@
   .reasonsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.viewMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 @media (max-width: 768px) {

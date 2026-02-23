@@ -69,7 +69,7 @@ export default function ContactPage() {
                                         <div>
                                             <h3 className={styles.infoLabel}>Call Us</h3>
                                             <p className={styles.infoText}>+91 83209 77346 </p>
-                                            <p className={styles.infoSubText}>Mon-Sat from 9am to 6pm</p>
+                                            <p className={styles.infoSubText}>Mon-Sat from 11am to 8pm</p>
                                         </div>
                                     </div>
 

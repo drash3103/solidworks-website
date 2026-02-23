@@ -10,7 +10,7 @@ const reviews = [
         id: 1,
         name: 'Dharmesh Prajapati',
         initials: 'DP',
-        text: 'Excellent SolidWorks Training Experience! I recently joined the SolidWorks Authorized Training Centre to switch my career as a Design Engineer and it has been a great learning journey so far. The centre uses original licensed SolidWorks software, so we get access to all the real features used in the industry. The teaching style is very clear and practical, with individual attention and personal doubt-solving for every student. The faculty members are certified and experienced, which really helps in understanding both the basics and advanced concepts easily. The learning environment is friendly, supportive, and motivating — perfect for beginners as well as working professionals. They also guide you properly in choosing the right course based on your background, which I really appreciate. Overall, I can confidently say this is one of the best SolidWorks training centres in Vadodara. Highly recommended!',
+        text: 'Excellent SolidWorks Training Experience! I recently joined the SolidWorks Authorized Training Centre to switch my career as a Design Engineer and it has been a great learning journey so far.\n\nThe centre uses original licensed SolidWorks software, so we get access to all the real features used in the industry. The teaching style is very clear and practical, with individual attention and personal doubt-solving for every student. The faculty members are certified and experienced, which really helps in understanding both the basics and advanced concepts easily. \n\nThe learning environment is friendly, supportive, and motivating — perfect for beginners as well as working professionals. They also guide you properly in choosing the right course based on your background, which I really appreciate. Overall, I can confidently say this is one of the best SolidWorks training centres in Vadodara. Highly recommended!',
         rating: 5,
         highlight: false,
     },
@@ -80,9 +80,6 @@ export default function Testimonials({ className }) {
                     <p className={styles.subheading}>
                         See what our students have to say about their learning experience.
                     </p>
-                    <div className={styles.dividerWrapper}>
-                        <span className={styles.divider} />
-                    </div>
                 </div>
 
                 <div className={styles.gridContainer}>

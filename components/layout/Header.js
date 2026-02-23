@@ -129,19 +129,18 @@ export default function Header() {
             <li>
               <Link href="/contact" className={isActive("/contact") ? styles.active : ""} onClick={closeMenu}>Contact Us</Link>
             </li>
-            {/* Mobile-only CTA */}
             <li className={styles.mobileCta}>
-              <a href="https://wa.me/+918320977346" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className={styles.ctaButton} style={{ display: 'inline-block', textDecoration: 'none' }}>
+              <Link href="/contact" onClick={closeMenu} className={styles.ctaButton} style={{ display: 'inline-block', textDecoration: 'none' }}>
                 Inquire
-              </a>
+              </Link>
             </li>
           </ul>
 
           {/* Desktop CTA */}
           <div className={styles.desktopCta}>
-            <a href="https://wa.me/+918320977346" target="_blank" rel="noopener noreferrer" className={styles.ctaButton} style={{ display: 'inline-block', textDecoration: 'none' }}>
+            <Link href="/contact" onClick={closeMenu} className={styles.ctaButton} style={{ display: 'inline-block', textDecoration: 'none' }}>
               Inquire
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

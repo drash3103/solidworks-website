@@ -74,12 +74,9 @@ export default function WhyChooseUs({ className }) {
                 <div className={styles.header}>
                     <h2 className={styles.heading}>Why Choose Us</h2>
                     <p className={styles.subheading}>
-                        At Bhavya Future Edutech, we don’t just teach software; we teach engineering design. Our unique
+                        We don’t just teach software; we teach engineering design. Our unique
                         approach ensures the why behind every click.
                     </p>
-                    <div className={styles.dividerWrapper}>
-                        <span className={styles.divider} />
-                    </div>
                 </div>
 
                 {/* Outer Border Box */}

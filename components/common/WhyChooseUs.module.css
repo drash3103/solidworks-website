@@ -2,7 +2,6 @@
     background-color: #FFEDD5;
     /* Darker peach to match image pattern */
     padding: 6rem 0;
-    font-family: var(--font-noto-sans), sans-serif;
 }
 
 .header {
@@ -16,7 +15,7 @@
     color: #6B21A8;
     /* purple-700 */
     margin-bottom: 1rem;
-    font-family: var(--font-space-grotesk), sans-serif;
+    font-family: 'Arial'
 }
 
 .subheading {
@@ -26,7 +25,6 @@
     margin: 0 auto;
     line-height: 1.6;
     font-weight: 400;
-    font-family: var(--font-noto-sans), sans-serif;
 }
 
 .dividerWrapper {
@@ -116,7 +114,6 @@
 }
 
 .cardTitle {
-    font-family: var(--font-space-grotesk), sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

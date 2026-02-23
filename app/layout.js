@@ -5,6 +5,7 @@ import FloatingWhatsApp from '@/components/common/FloatingWhatsApp';
 import StructuredData from '@/components/seo/StructuredData';
 import { generateOrganizationSchema } from '@/utils/seo';
 import siteMeta from '@/content/siteMeta.json';
+import ScrollToTop from '@/components/common/ScrollToTop';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
         <StructuredData data={organizationSchema} />
       </head>
       <body>
+        <ScrollToTop />
         <a href="#main-content" className="skip-to-content">
           Skip to content
         </a>

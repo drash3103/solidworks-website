@@ -41,7 +41,7 @@ const testimonials = [
         color: '#C59D5F' // #E7E5E4 / darker tint
     },
     {
-        name: 'Khagesh Kabra',
+        name: 'Khagesh Kabara',
         text: 'I recently started learning SolidWorks here and honestly the experience is really good. The trainer explains everything in a simple and practical way. Feeling more confident day by day.',
         color: '#bbe5acff' // #E7E5E4 / darker tint
     },

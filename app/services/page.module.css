@@ -1,6 +1,5 @@
 .pageContainer {
   width: 100%;
-  font-family: var(--font-noto-sans), sans-serif;
 }
 
 /* Hero Section */
@@ -32,7 +31,6 @@
 }
 
 .heroTitle {
-  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -76,7 +74,6 @@
 }
 
 .serviceTitle {
-  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   color: #EA580C;
@@ -145,7 +142,6 @@
 }
 
 .excellenceTitle {
-  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   color: #6B21A8;
@@ -228,7 +224,6 @@
 }
 
 .stepTitle {
-  font-family: var(--font-space-grotesk), sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 1rem;

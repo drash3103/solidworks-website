@@ -41,7 +41,7 @@ const roles = [
 ];
 
 const introParagraphs = [
-  "Bhavya Future Edutech is an Authorized Training Centre for SOLIDWORKS - Dassault Systemes, S.A France.",
+  "Bhavya Future Edutech is an Authorized Training Center for SOLIDWORKS - Dassault Systemes, S.A France.",
   "Our SOLIDWORKS training delivers hands-on experience in concept planning, design visualization, 3D modeling, and production-ready engineering drawings.",
   "We offer courses in Modeling, Computer Aided Design (CAD), Computer Aided Engineering (CAE), Computational Fluid Dynamics (CFD), Simulation & Analysis, Computer Aided Manufacturing (CAM) and 3D Printing.",
   "We provide bespoke corporate training solutions designed to align with organizational objectives, engineering standards, and operational workflows. Our programs are structured around real-world industry applications, enabling engineering teams to enhance technical proficiency, improve design effectiveness, and maximize the strategic use of SOLIDWORKS in support of manufacturing excellence and business performance."
@@ -69,7 +69,7 @@ export default function SolidWorksTrainingPage() {
         </div>
         <img
           src="/solidworks-autho-centre.jpg"
-          alt="Authorized Training Centre"
+          alt="Authorized Training Center"
           className={styles.heroAuthLogo}
         />
       </section>

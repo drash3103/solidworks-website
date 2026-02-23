@@ -17,7 +17,7 @@ const images = [
 const contentSets = [
     {
         heading: <><span className={styles.orangeText}>One Stop</span> SOLIDWORKS Solutions</>,
-        tagline: "SOLIDWORKS Authorized Training, Placement and Design Centre",
+        tagline: "SOLIDWORKS Authorized Training, Placement and Design Center",
         description: "Learn Design, Lead the World"
     },
     {
@@ -156,7 +156,7 @@ export default function Hero() {
             {/* Footer Logo */}
             <img
                 src="/solidworks-autho-centre.jpg"
-                alt="Authorized Training Centre"
+                alt="Authorized Training Center"
                 className={styles.heroAuthLogo}
             />
         </section>

@@ -28,7 +28,7 @@ export default function HomePage() {
       {/* About Us Section - Cream */}
       <section className={`${styles.about} ${styles.creamBg}`}>
         <div className="container">
-          <h2 className={styles.aboutTitle}>About Us</h2>
+          <h2 className={styles.aboutTitle}>SOLIDWORKS Authorised Partner</h2>
           <div className={styles.aboutGrid}>
             <div className={styles.aboutImageWrapper}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -40,7 +40,9 @@ export default function HomePage() {
             </div>
             <div className={styles.aboutContent}>
               <h3 className={styles.mainHeading}>
-                <span>Bhavya Future EduTech is Shaping the Future</span> <span className={styles.orangeTextHeading}>of Design Engineering and one stop solutions for all type of CAD Services</span>
+                <span style={{ color: '#6B21A8', fontStyle: 'italic' }}>Bhavya </span>
+                <span style={{ color: '#EA580C', fontStyle: 'italic' }}>Future EduTech </span>
+                <span style={{ color: '#000', fontStyle: 'normal' }}>is Shaping the Future of Design Engineering and one stop solutions for all type of CAD Services</span>
               </h3>
               <p className={styles.italicDesc}>
                 Bhavya Future EduTech is a recognized training organization dedicated to providing comprehensive education and professional
@@ -79,7 +81,7 @@ export default function HomePage() {
           <div className={styles.sectionHeader}>
             <h2>Services We Offer</h2>
             <p>
-              Comprehensive solutions for students, professionals, corporates and industries.
+              Comprehensive solutions for students, professionals, corporates and industries
             </p>
           </div>
           <div className="grid grid-3">

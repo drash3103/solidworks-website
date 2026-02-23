@@ -1,6 +1,5 @@
 .pageContainer {
     width: 100%;
-    font-family: var(--font-noto-sans), sans-serif;
 }
 
 /* Hero Section */
@@ -42,7 +41,6 @@
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     color: white;
-    font-family: var(--font-space-grotesk), sans-serif;
 }
 
 .ratingBadge {
@@ -180,7 +178,6 @@
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s;
-    font-family: var(--font-noto-sans), sans-serif;
 }
 
 .loadMoreBtn:hover {

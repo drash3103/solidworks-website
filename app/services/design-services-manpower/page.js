@@ -3,6 +3,7 @@ import { generateMetadata as generateSEOMetadata, generateServiceSchema } from '
 import Breadcrumb from '@/components/seo/Breadcrumb';
 import StructuredData from '@/components/seo/StructuredData';
 import CallToAction from '@/components/common/CallToAction';
+import Button from '@/components/common/Button';
 
 import servicesData from '@/content/services.json';
 import styles from './page.module.css';
@@ -82,7 +83,7 @@ const reasons = [
 ];
 
 const workSteps = [
-  { id: 1, title: 'Concept Discussion', desc: 'Understanding your design requirements and project scope.', icon: '/icons/concept_discussion.png' },
+  { id: 1, title: 'Concept Discussion', desc: 'Understanding your design requirements and project scope', icon: '/icons/concept_discussion.png' },
   { id: 2, title: 'Detailed Engineering', desc: 'Conceptual Drawing preparation', icon: '/icons/detailed_engineering.png' },
   { id: 3, title: 'Solution Delivery', desc: '3D/2D design drawing submission', icon: '/icons/solution_delivery.png' },
 ];
@@ -210,7 +211,7 @@ export default function DesignServicesManpowerPage() {
       <section className={styles.howWeWork}>
         <div className="container">
           <h2 className={`${styles.sectionTitle}`}>Our Approach</h2>
-          <p className={styles.sectionSubtext}>Accelerating Excellence through our design stages.</p>
+          <p className={styles.sectionSubtext}>From concept to completion, we partner with you every step of the way</p>
           <div className={styles.stepsGrid}>
             {workSteps.map((step) => {
               const Icon = step.icon;
@@ -224,7 +225,7 @@ export default function DesignServicesManpowerPage() {
                     )}
                   </div>
                   <div className={styles.stepContent}>
-                    <h3>{step.id}. {step.title}</h3>
+                    <h3>{step.title}</h3>
                     <p>{step.desc}</p>
                   </div>
                 </div>
@@ -241,8 +242,14 @@ export default function DesignServicesManpowerPage() {
           <div className={styles.featuredGrid}>
             <div className={`${styles.featuredItem} ${styles.narrow}`}><img src="/3d_printer_designs/image 15.png" alt="Featured Design 1" /></div>
             <div className={`${styles.featuredItem} ${styles.wide}`}><img src="/3d_printer_designs/image 14.png" alt="Featured Design 2" /></div>
-            <div className={`${styles.featuredItem} ${styles.wide}`}><img src="/3d_printer_designs/image 17.png" alt="Featured Design 3" /></div>
-            <div className={`${styles.featuredItem} ${styles.narrow}`}><img src="/3d_printer_designs/image 18.png" alt="Featured Design 4" /></div>
+            <div className={`${styles.featuredItem} ${styles.wide}`}><img src="/gallery_Img/2.assembly/17.jpg" alt="Featured Design 3" /></div>
+            <div className={`${styles.featuredItem} ${styles.narrow}`}><img src="/gallery_Img/2.assembly/24.jpg " alt="Featured Design 4" /></div>
+          </div>
+
+          <div className={styles.viewMoreContainer}>
+            <Button href="/gallery" variant="purple" size="large">
+              View More
+            </Button>
           </div>
         </div>
       </section>

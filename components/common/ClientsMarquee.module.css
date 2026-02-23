@@ -10,8 +10,8 @@
     font-weight: 700;
     color: #6B21A8;
     /* purple-700 */
-    font-family: var(--font-space-grotesk), sans-serif;
     margin-bottom: 3rem;
+    font-family: 'Arial';
 }
 
 .marqueeContainer {

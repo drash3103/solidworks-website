@@ -48,7 +48,9 @@ export default function AboutPage() {
       <section className={`${styles.introSection} ${styles.creamBg}`}>
         <div className="container">
           <h2 className={styles.sectionTitle}>
-            Bhavya Future EduTech is Shaping the Future <span className={styles.highlightText}>of Design Engineering and one stop solutions for all type of CAD Services</span>
+            <span style={{ color: '#6B21A8', fontStyle: 'italic', fontFamily: 'Arial, sans-serif' }}>Bhavya </span>
+            <span style={{ color: '#EA580C', fontStyle: 'italic', fontFamily: 'Arial, sans-serif' }}>Future EduTech </span>
+            <span style={{ color: '#000', fontStyle: 'normal', fontFamily: 'Arial, sans-serif' }}>is Shaping the Future of Design Engineering and one stop solutions for all type of CAD Services</span>
           </h2>
           <div className={styles.introContent}>
             <p>
@@ -148,11 +150,11 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-          <div className={styles.viewMoreWrapper}>
+          {/* <div className={styles.viewMoreWrapper}>
             <Link href="/gallery" className={styles.viewMoreBtn}>
               View More
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
