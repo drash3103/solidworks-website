@@ -1,7 +1,7 @@
 {
-  "siteName": "CAB Authorized",
-  "siteUrl": "https://cabauthorized.com",
-  "defaultTitle": "CAB Authorized - SOLIDWORKS Training, Placement & Design Services",
+  "siteName": "Bhavya Future EduTech",
+  "siteUrl": "https://bhavyafutureedutech.com",
+  "defaultTitle": "Bhavya Future EduTech - SOLIDWORKS Training, Placement & Design Services",
   "defaultDescription": "Leading provider of SOLIDWORKS training, placement services, and design engineering manpower solutions. Transform your career with expert-led courses and industry connections.",
   "keywords": [
     "SOLIDWORKS training",
@@ -12,17 +12,17 @@
     "mechanical design training",
     "engineering courses"
   ],
-  "contactEmail": "info@cabauthorized.com",
-  "contactPhone": "+91-XXXXXXXXXX",
+  "contactEmail": "info@bhavyafutureedutech.com",
+  "contactPhone": "+91-8320977346",
   "socialMedia": {
-    "linkedin": "https://linkedin.com/company/cabauthorized",
-    "twitter": "https://twitter.com/cabauthorized",
-    "facebook": "https://facebook.com/cabauthorized"
+    "linkedin": "https://www.linkedin.com/in/solidworks-authorized-training-services-center-vadodara",
+    "twitter": "https://twitter.com/bhavyafutureedutech",
+    "facebook": "https://www.facebook.com/profile.php?id=61583191423828#"
   },
   "address": {
     "street": "Business Address",
-    "city": "City",
-    "state": "State",
+    "city": "Vadodara",
+    "state": "Gujarat",
     "country": "India",
     "zipCode": "000000"
   }

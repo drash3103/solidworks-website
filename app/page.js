@@ -34,7 +34,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/about_us.jpeg"
-                alt="About CAB Authorized Training Centre"
+                alt="About Bhavya Future EduTech Training Centre"
                 className={styles.aboutImage}
               />
             </div>
