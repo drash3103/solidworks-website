@@ -23,8 +23,17 @@ const clients = [
 ];
 
 const glimpses = [
-  "photo1.jpeg", "photo2.jpeg", "photo3.jpeg",
-  "photo4.jpeg", "photo5.jpeg", "photo6.jpeg"
+  "WhatsApp Image 2026-02-24 at 22.46.00 (1).jpeg",
+  "WhatsApp Image 2026-02-24 at 22.46.00.jpeg",
+  "WhatsApp Image 2026-02-24 at 22.46.01 (1).jpeg",
+  "WhatsApp Image 2026-02-24 at 22.46.01 (2).jpeg",
+  "WhatsApp Image 2026-02-24 at 22.46.01.jpeg",
+  "WhatsApp Image 2026-02-24 at 22.47.11 (1).jpeg",
+  "WhatsApp Image 2026-02-24 at 22.47.12 (1).jpeg",
+  "WhatsApp Image 2026-02-24 at 22.47.12.jpeg",
+  "WhatsApp Image 2026-02-24 at 22.50.40.jpeg",
+  "WhatsApp Image 2026-02-24 at 22.57.28.jpeg",
+  "WhatsApp Image 2026-02-24 at 23.17.24.jpeg"
 ];
 
 export default function AboutPage() {
@@ -143,7 +152,7 @@ export default function AboutPage() {
               <div key={index} className={styles.glimpseWrapper}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/center_pics/${pic}`}
+                  src={`/Archive/${pic}`}
                   alt={`Center Glimpse ${index + 1}`}
                   className={styles.glimpseImage}
                 />

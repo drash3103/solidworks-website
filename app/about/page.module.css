@@ -223,13 +223,16 @@
 }
 
 .glimpsesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
 .glimpseWrapper {
+  flex: 1 1 300px;
+  max-width: 380px;
   width: 100%;
   height: 250px;
   border-radius: 12px;
@@ -319,6 +322,7 @@
     padding: 3rem 0;
   }
 }
+
 /* Global Mobile Hero Logo Override */
 @media (max-width: 1024px) {
   .heroAuthLogo {
