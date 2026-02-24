@@ -12,7 +12,7 @@ export const metadata = generateSEOMetadata({
 const servicesList = [
   {
     id: 'solidworks-training',
-    title: 'SolidWorks Training',
+    title: 'SOLIDWORKSTraining',
     image: '/services/training_clean.jpeg',
     description: [
       "Bhavya Future Edutech is an Authorized Training Center for SOLIDWORKS - Dassault Systemes, S.A France.",
