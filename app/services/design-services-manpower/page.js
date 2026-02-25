@@ -122,7 +122,7 @@ export default function DesignServicesManpowerPage() {
           <div className={styles.introContent}>
             <div className={styles.introText}>
               <p>
-                Bhavya Future EduTech is a professionally managed engineering design consultancy based in <span className={styles.highlight}>Vadodara, Gujarat</span>, specializing in <span className={styles.highlight}>CAD drafting, engineering design services, and manpower supply</span>. Our mission is to bridge technical excellence with practical solutions by providing skilled resources and accurate, production-ready designs to support industry needs.
+                <strong style={{ fontStyle: 'italic' }}><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future EduTech</span></strong> is a professionally managed engineering design consultancy based in <span className={styles.highlight}>Vadodara, Gujarat</span>, specializing in <span className={styles.highlight}>CAD drafting, engineering design services, and manpower supply</span>. Our mission is to bridge technical excellence with practical solutions by providing skilled resources and accurate, production-ready designs to support industry needs.
               </p>
               <p>
                 Backed by a strong foundation in engineering knowledge and industry best practices, we deliver <span className={styles.highlight}>high-quality, cost-effective, and timely solutions</span> tailored to the unique requirements of each project. Along with design and drafting services, we offer <span className={styles.highlight}>qualified design engineering manpower</span> to support client operations, project execution, and workforce requirements across industries.

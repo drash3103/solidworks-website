@@ -12,10 +12,10 @@ export const metadata = generateSEOMetadata({
 const servicesList = [
   {
     id: 'solidworks-training',
-    title: 'SOLIDWORKSTraining',
+    title: 'SOLIDWORKS Training',
     image: '/services/training_clean.jpeg',
     description: [
-      <><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future Edutech</span> is an Authorized Training Center for SOLIDWORKS - Dassault Systemes, S.A France.</>,
+      <><strong style={{ fontStyle: 'italic' }}><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future EduTech</span></strong> <span style={{ color: '#000' }}>is an Authorized Training Center for SOLIDWORKS - Dassault Systemes, S.A France.</span></>,
       "Our SOLIDWORKS training delivers hands-on experience in concept planning, design visualization, 3D modeling, and production-ready engineering drawings.",
       "We offer courses in Modeling, Computer Aided Design (CAD), Computer Aided Engineering (CAE), Computational Fluid Dynamics (CFD), Simulation & Analysis, Computer Aided Manufacturing (CAM) and 3D Printing.",
       "We provide bespoke corporate training solutions designed to align with organizational objectives, engineering standards, and operational workflows. Our programs are structured around real-world industry applications, enabling engineering teams to enhance technical proficiency, improve design effectiveness, and maximize the strategic use of SOLIDWORKS in support of manufacturing excellence and business performance."
@@ -28,7 +28,7 @@ const servicesList = [
     title: 'Placements',
     image: '/services/placements.png',
     description: [
-      <><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future Edutech</span> bridges the gap between education and employment by delivering industry-focused job-oriented training in the CAD/CAM domain. Beyond technical skill development, we provide end-to-end career support—including placement guidance, interview preparation, and professional mentorship—to help students build confidence and launch successful careers in engineering design and manufacturing.</>,
+      <><strong style={{ fontStyle: 'italic' }}><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future EduTech</span></strong> bridges the gap between education and employment by delivering industry-focused job-oriented training in the CAD/CAM domain. Beyond technical skill development, we provide end-to-end career support—including placement guidance, interview preparation, and professional mentorship—to help students build confidence and launch successful careers in engineering design and manufacturing.</>,
       "We offer exciting internship opportunities for engineering students and professionals, designed to build strong practical and industry-ready skills.",
       "We actively mentor final-semester engineering students on their academic projects, providing hands-on guidance, real-world engineering exposure, and a clear connection between theoretical concepts and industry applications.",
       "Additionally, we provide Internship and placement assistance to engineers and working professionals through our network of 1000+ associated and renowned client companies, helping candidates unlock meaningful career opportunities."
@@ -41,7 +41,7 @@ const servicesList = [
     title: 'Design Services & Manpower supply',
     image: '/services/design_services.jpeg',
     description: [
-      <><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future Edutech</span> provides professional 3D design, CAD/CAM job work and design manpower supply services for mechanical and industrial projects. Our team delivers high-precision modeling, detailed drafting, and skilled design resources to support design projects with industry standards.</>,
+      <><strong style={{ fontStyle: 'italic' }}><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future EduTech</span></strong> provides professional 3D design, CAD/CAM job work and design manpower supply services for mechanical and industrial projects. Our team delivers high-precision modeling, detailed drafting, and skilled design resources to support design projects with industry standards.</>,
       "From concept development to manufacturing-ready drawings and reliable design manpower support, we ensure innovative, accurate, and reliable design solutions delivered on time."
     ],
     buttonText: 'Know More',

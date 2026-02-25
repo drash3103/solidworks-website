@@ -40,12 +40,12 @@ export default function HomePage() {
             </div>
             <div className={styles.aboutContent}>
               <h3 className={styles.mainHeading}>
-                <span style={{ color: '#6B21A8', fontStyle: 'italic' }}>Bhavya </span>
-                <span style={{ color: '#EA580C', fontStyle: 'italic' }}>Future EduTech </span>
+                <span style={{ color: '#6B21A8', fontStyle: 'italic', fontWeight: 'bold' }}>Bhavya </span>
+                <span style={{ color: '#EA580C', fontStyle: 'italic', fontWeight: 'bold' }}>Future EduTech </span>
                 <span style={{ color: '#000', fontStyle: 'normal' }}>is Shaping the Future of Design Engineering and one stop solutions for all type of CAD Services</span>
               </h3>
               <p className={styles.italicDesc}>
-                Bhavya Future EduTech is a recognized training organization dedicated to providing comprehensive education and professional
+                <strong style={{ fontStyle: 'italic' }}><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future EduTech</span></strong> is a recognized training organization dedicated to providing comprehensive education and professional
                 services in SOLIDWORKS, a powerful solid modeling CAD (Computer-Aided Design), CAE (Computer-Aided
                 Engineering), and 3D Printing platform widely adopted across the design and manufacturing industries.
               </p>

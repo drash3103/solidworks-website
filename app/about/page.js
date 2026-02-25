@@ -23,6 +23,7 @@ const clients = [
 ];
 
 const glimpses = [
+  "WhatsApp Image 2026-02-24 at 23.17.24.jpeg",
   "WhatsApp Image 2026-02-24 at 22.46.00 (1).jpeg",
   "WhatsApp Image 2026-02-24 at 22.46.00.jpeg",
   "WhatsApp Image 2026-02-24 at 22.46.01 (1).jpeg",
@@ -32,8 +33,7 @@ const glimpses = [
   "WhatsApp Image 2026-02-24 at 22.47.12 (1).jpeg",
   "WhatsApp Image 2026-02-24 at 22.47.12.jpeg",
   "WhatsApp Image 2026-02-24 at 22.50.40.jpeg",
-  "WhatsApp Image 2026-02-24 at 22.57.28.jpeg",
-  "WhatsApp Image 2026-02-24 at 23.17.24.jpeg"
+  "WhatsApp Image 2026-02-24 at 22.57.28.jpeg"
 ];
 
 export default function AboutPage() {
@@ -57,13 +57,13 @@ export default function AboutPage() {
       <section className={`${styles.introSection} ${styles.creamBg}`}>
         <div className="container">
           <h2 className={styles.sectionTitle}>
-            <span style={{ color: '#6B21A8', fontStyle: 'italic', fontFamily: 'Arial, sans-serif' }}>Bhavya </span>
-            <span style={{ color: '#EA580C', fontStyle: 'italic', fontFamily: 'Arial, sans-serif' }}>Future EduTech </span>
+            <span style={{ color: '#6B21A8', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Bhavya </span>
+            <span style={{ color: '#EA580C', fontStyle: 'italic', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Future EduTech </span>
             <span style={{ color: '#000', fontStyle: 'normal', fontFamily: 'Arial, sans-serif' }}>is Shaping the Future of Design Engineering and one stop solutions for all type of CAD Services</span>
           </h2>
           <div className={styles.introContent}>
             <p>
-              Bhavya Future EduTech is a recognized training organization dedicated to providing comprehensive education and professional services in SOLIDWORKS, a powerful solid modeling CAD (Computer-Aided Design), CAE (Computer-Aided Engineering), and 3D Printing platform widely adopted across the design and manufacturing industries.
+              <strong style={{ fontStyle: 'italic' }}><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future EduTech</span></strong> is a recognized training organization dedicated to providing comprehensive education and professional services in SOLIDWORKS, a powerful solid modeling CAD (Computer-Aided Design), CAE (Computer-Aided Engineering), and 3D Printing platform widely adopted across the design and manufacturing industries.
             </p>
             <p>
               Our curriculum is carefully structured to meet current industry standards and technological advancements, offering industry-focused courses for designers, engineers, and architects in the fields of Mechanical, Electrical, Automotive, Robotics, Mechatronics  and Aeronautical Engineering.

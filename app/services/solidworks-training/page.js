@@ -41,7 +41,7 @@ const roles = [
 ];
 
 const introParagraphs = [
-  "Bhavya Future Edutech is an Authorized Training Center for SOLIDWORKS - Dassault Systemes, S.A France.",
+  <><strong style={{ fontStyle: 'italic' }}><span style={{ color: '#6B21A8' }}>Bhavya</span> <span style={{ color: '#EA580C' }}>Future EduTech</span></strong> <span style={{ color: '#000' }}>is an Authorized Training Center for SOLIDWORKS - Dassault Systemes, S.A France.</span></>,
   "Our SOLIDWORKS training delivers hands-on experience in concept planning, design visualization, 3D modeling, and production-ready engineering drawings.",
   "We offer courses in Modeling, Computer Aided Design (CAD), Computer Aided Engineering (CAE), Computational Fluid Dynamics (CFD), Simulation & Analysis, Computer Aided Manufacturing (CAM) and 3D Printing.",
   "We provide bespoke corporate training solutions designed to align with organizational objectives, engineering standards, and operational workflows. Our programs are structured around real-world industry applications, enabling engineering teams to enhance technical proficiency, improve design effectiveness, and maximize the strategic use of SOLIDWORKS in support of manufacturing excellence and business performance."
