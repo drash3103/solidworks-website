@@ -62,8 +62,9 @@
 .brandContainer {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .brandTextContainer {
@@ -89,7 +90,7 @@
 }
 
 .brandNameBhavya {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   font-style: italic;
   color: #6B21A8;
@@ -98,7 +99,7 @@
 }
 
 .brandNameFuture {
-  font-size: 28px;
+  font-size: 22px;
   /* Bigger size */
   font-weight: 700;
   font-style: italic;
@@ -109,9 +110,18 @@
 
 /* Logo */
 .logo img {
-  height: 100px;
+  height: 80px;
   /* Increased size */
   width: auto;
+}
+
+/* SolidWorks Authorized Logo */
+.swAuthorizedLogo {
+  height: 70px;
+  width: auto;
+  margin: 0 6px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* Menu */
@@ -264,6 +274,11 @@
   .logo img {
     height: 75px;
   }
+
+  .swAuthorizedLogo {
+    height: 75px;
+    width: auto;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -282,6 +297,11 @@
 
   .logo img {
     height: 70px;
+  }
+
+  .swAuthorizedLogo {
+    height: 70px;
+    width: auto;
   }
 }
 
@@ -312,6 +332,11 @@
   .logo img {
     height: 60px;
   }
+
+  .swAuthorizedLogo {
+    height: 50px;
+    width: auto;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -330,6 +355,13 @@
 
   .logo img {
     height: 50px;
+  }
+
+  .swAuthorizedLogo {
+    display: block;
+    height: 50px;
+    width: auto;
+    margin: 0 4px;
   }
 
   .brandNameBhavya,
@@ -402,5 +434,11 @@
 
   .tagline {
     font-size: 10px;
+  }
+
+  .swAuthorizedLogo {
+    height: 50px;
+    width: auto;
+    margin: 0 3px;
   }
 }

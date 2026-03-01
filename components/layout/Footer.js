@@ -21,6 +21,12 @@ export default function Footer() {
                 </div>
                 <p className={styles.tagline}>Learn Design, Lead the World</p>
               </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/solidworks-autho-centre.jpg"
+                alt="SolidWorks Authorized Center"
+                className={styles.swAuthorizedLogo}
+              />
             </div>
           </div>
 

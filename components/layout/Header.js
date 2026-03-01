@@ -81,6 +81,12 @@ export default function Header() {
               </div>
               <span className={styles.tagline}>Learn Design, Lead the World</span>
             </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/solidworks-autho-centre.jpg"
+              alt="SolidWorks Authorized Center"
+              className={styles.swAuthorizedLogo}
+            />
           </Link>
 
           {/* Hamburger Menu Icon */}

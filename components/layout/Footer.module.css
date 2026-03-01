@@ -40,6 +40,18 @@
   padding: 5px;
 }
 
+/* SolidWorks Authorized Logo */
+.swAuthorizedLogo {
+  height: 90px;
+  width: auto;
+  margin: 0 10px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 8px;
+  padding: 4px;
+}
+
 .brandTextContainer {
   display: flex;
   flex-direction: row;
@@ -188,6 +200,11 @@
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
+  }
+
+  .swAuthorizedLogo {
+    height: 70px;
+    margin: 0 6px;
   }
 
   .brandTextContainer {
